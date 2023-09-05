@@ -1,4 +1,6 @@
 header {
+  position: fixed;
+  top: 0;
   width: 100%;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
@@ -27,6 +29,7 @@ header {
       line-height: 20px;
       letter-spacing: 0.32px;
       align-items: center;
+      display: flex;
     }
     b {
       font-weight: 700;
@@ -58,8 +61,9 @@ header {
 
 .header {
   height: 72px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 31px 15px 15px;
   &-logo {
     &__img {
@@ -125,6 +129,7 @@ header {
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  flex-basis: 100%;
 
   &.open {
     visibility: visible;
@@ -179,6 +184,7 @@ header {
 @include rwd(l) {
   .header {
     height: 113px;
+    padding: 0;
     &-logo {
       &__img {
         height: 80px;
@@ -187,14 +193,15 @@ header {
   }
 
   .menu-btn {
-    visibility: hidden;
+    display: none;
   }
 
   .nav {
     visibility: visible;
     position: static;
-
+    width: auto;
     .menu-nav {
+      padding: 0;
       display: block;
       transform: translateY(0);
       height: 100%;
@@ -203,7 +210,11 @@ header {
 
       &__item {
         display: inline;
-        padding-right: 1.5rem;
+        padding: 0 20px;
+
+        &:last-child {
+          padding-right: 0;
+        }
       }
       &__link {
         font-size: 16px;
@@ -211,6 +222,7 @@ header {
         font-weight: 500;
         line-height: normal;
         text-transform: uppercase;
+        display: inline-flex;
       }
     }
   }
@@ -219,5 +231,12 @@ header {
 @include rwd(xl) {
   .infobar {
     display: flex;
+  }
+  .nav {
+    .menu-nav {
+      &__item {
+        padding: 0 40px;
+      }
+    }
   }
 }
