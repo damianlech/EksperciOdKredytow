@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss public/css/main.css -w",
+    "server": "live-server public",
+    "start": "npm-run-all --parallel watch:sass server"
+  },
+  "author": "Damian Lech",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0"
+  }
+}
