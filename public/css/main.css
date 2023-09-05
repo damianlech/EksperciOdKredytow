@@ -1,0 +1,155 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none; }
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+.container {
+  width: 100%; }
+  @media only screen and (min-width: 576px) {
+    .container {
+      width: 540px; } }
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 720px; } }
+  @media only screen and (min-width: 992px) {
+    .container {
+      width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1140px; } }
+  @media only screen and (min-width: 1400px) {
+    .container {
+      width: 1320px; } }
+
+h1 {
+  color: #fff;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  font-family: Mukta;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  /* 114.286% */
+  text-transform: uppercase; }
+
+h2 {
+  font-family: Mukta;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
+  /* 107.143% */
+  text-transform: uppercase; }
+
+h3 {
+  font-family: Mukta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 120% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase; }
+
+p {
+  font-family: Mukta;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  /* 137.5% */
+  letter-spacing: 0.32px; }
