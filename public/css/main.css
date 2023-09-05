@@ -153,3 +153,22 @@ p {
   line-height: 22px;
   /* 137.5% */
   letter-spacing: 0.32px; }
+
+.btn-main {
+  display: inline-flex;
+  padding: 15px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  background: #e9262d; }
+
+.btn-add {
+  display: inline-flex;
+  padding: 15px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.1); }
