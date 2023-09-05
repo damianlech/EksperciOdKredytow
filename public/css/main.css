@@ -301,7 +301,15 @@ header {
       font-weight: 300;
       transition: 0.5s; }
       .nav .menu-nav__link:hover {
-        color: #03466e; }
+        color: #e9262d; }
+        .nav .menu-nav__link:hover::after {
+          content: "";
+          position: fixed;
+          bottom: 20px;
+          width: 92px;
+          height: 3px;
+          background: #e9262d;
+          transition: 0.5s; }
 
 .menu-nav__item:nth-child(1) {
   transition-delay: 0.25s; }
