@@ -1,0 +1,35 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-135px * 5));
+  }
+}
+
+.carousel {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  &__content {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &__track {
+      display: flex;
+      animation: scroll 40s linear infinite;
+      width: calc(135px * 10);
+      &-item {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+          width: 135px;
+        }
+      }
+    }
+  }
+}

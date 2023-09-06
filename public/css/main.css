@@ -248,3 +248,31 @@ p {
   cursor: pointer; }
   .btn-sec:hover {
     background: #003a5d; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-135px * 5)); } }
+
+.carousel {
+  height: 170px;
+  display: flex;
+  align-items: center; }
+  .carousel__content {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%; }
+    .carousel__content__track {
+      display: flex;
+      animation: scroll 40s linear infinite;
+      width: calc(135px * 10); }
+      .carousel__content__track-item {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .carousel__content__track-item img {
+          width: 135px; }
