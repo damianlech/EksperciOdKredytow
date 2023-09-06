@@ -254,20 +254,27 @@ p {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  align-items: center; }
   .about__content__title {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; }
-    .about__content__title h2 {
-      color: #03466e; }
-    .about__content__title #h-line {
-      content: "";
-      width: 123px;
-      height: 1px;
-      background: #d9d9d9;
-      margin-left: 15px; }
-    .about__content__title .sub {
+    flex-wrap: wrap;
+    width: 100%; }
+    .about__content__title-main {
+      display: flex;
+      align-items: center;
+      flex-basis: 100%; }
+      .about__content__title-main h2 {
+        white-space: nowrap;
+        color: #03466e; }
+      .about__content__title-main #h-line {
+        content: "s";
+        width: 100%;
+        height: 1px;
+        background: #d9d9d9;
+        margin-left: 15px; }
+    .about__content__title-sub p {
       flex-basis: 100%;
       color: #ab1d22;
       font-family: Mukta;
@@ -284,11 +291,64 @@ p {
     flex-direction: column;
     padding: 30px 0;
     gap: 40px; }
-    .about__content__bios > * {
+    .about__content__bios__item {
       display: flex;
       flex-direction: column;
       gap: 15px; }
-    .about__content__bios__dorota h3 {
-      color: #ab1d22; }
-    .about__content__bios__miroslaw h3 {
-      color: #03466e; }
+      .about__content__bios__item > * {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; }
+      .about__content__bios__item h3 {
+        color: #ab1d22; }
+      .about__content__bios__item:nth-child(even) h3 {
+        color: #03466e; }
+
+@media only screen and (min-width: 992px) {
+  .about__content__title-main h2 {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
+    /* 107.143% */
+    text-transform: uppercase; }
+  .about__content__title-sub p {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    /* 123.077% */
+    letter-spacing: 1.04px;
+    text-transform: uppercase; }
+  .about__content__bios {
+    width: 100%; }
+    .about__content__bios #dorota-bio-img {
+      content: url("../img/dorota-bio-2.jpg"); }
+    .about__content__bios #miroslaw-bio-img {
+      content: url("../img/miroslaw-bio-2.jpg"); }
+    .about__content__bios__item {
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center; }
+      .about__content__bios__item img {
+        transform: scale(0.8); }
+      .about__content__bios__item:nth-child(even) {
+        flex-direction: row-reverse; }
+      .about__content__bios__item p {
+        line-height: 25px; }
+      .about__content__bios__item b {
+        font-weight: 700; }
+      .about__content__bios__item__text {
+        padding: 0 1rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .about__content__bios__item img {
+    transform: scale(0.9); }
+  .about__content__bios__item__text {
+    padding: 0 5rem; } }
+
+@media only screen and (min-width: 1400px) {
+  .about__content__bios__item img {
+    transform: none; }
+  .about__content__bios__item__text {
+    padding: 0 8rem; } }
