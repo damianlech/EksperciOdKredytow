@@ -248,3 +248,41 @@ p {
   cursor: pointer; }
   .btn-sec:hover {
     background: #003a5d; }
+
+.whyUs {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), lightgray 50%/cover no-repeat; }
+  .whyUs__content__title h2 {
+    color: #fff;
+    overflow: hidden;
+    position: relative; }
+    .whyUs__content__title h2::after {
+      content: "";
+      border-bottom: solid 1px rgba(217, 217, 217, 0.25);
+      position: absolute;
+      bottom: 15px;
+      display: inline-block;
+      width: 100%;
+      margin-right: -100%;
+      margin-left: 20px; }
+  .whyUs__content__title p {
+    color: #fff;
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    /* 137.5% */
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    padding-left: 10px; }
+  .whyUs__content__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; }
+    .whyUs__content__items__item {
+      border-radius: 3px;
+      background: #fff;
+      padding: 30px; }
+      .whyUs__content__items__item p {
+        padding-top: 20px; }
