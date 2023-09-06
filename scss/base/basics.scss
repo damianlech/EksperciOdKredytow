@@ -80,6 +80,7 @@ p {
   position: relative;
   cursor: pointer;
   transition: 0.3s ease-out;
+  text-decoration: none;
 
   &::before {
     background: $color-secondary-1;
