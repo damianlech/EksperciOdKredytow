@@ -68,6 +68,7 @@ p {
   gap: 10px;
   border-radius: 3px;
   background: $color-secondary-2;
+  border: none;
   color: #fff;
   font-family: Mukta;
   font-size: 18px;
@@ -76,6 +77,42 @@ p {
   line-height: 25px; /* 138.889% */
   letter-spacing: 0.36px;
   text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+
+  &::before {
+    background: $color-secondary-1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    border-radius: 0 3px 3px 0;
+    transition: 0.3s ease-out;
+  }
+
+  &::after {
+    content: url("../img/arrow-right.svg");
+    position: absolute;
+    top: 30%;
+    right: 12px;
+    opacity: 0;
+    transition: 0.3s ease-out;
+  }
+
+  &:hover {
+    padding: 15px 75px 15px 45px;
+
+    &::before {
+      width: 30px;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .btn-add {
@@ -95,4 +132,35 @@ p {
   line-height: 25px; /* 138.889% */
   letter-spacing: 0.36px;
   text-transform: uppercase;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 2px #fff;
+  }
+}
+
+.btn-sec {
+  display: inline-flex;
+  padding: 15px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  background: #03466e;
+  color: #fff;
+  font-family: Mukta;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background: #003a5d;
+  }
 }

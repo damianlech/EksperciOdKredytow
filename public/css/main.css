@@ -169,6 +169,7 @@ p {
   gap: 10px;
   border-radius: 3px;
   background: #e9262d;
+  border: none;
   color: #fff;
   font-family: Mukta;
   font-size: 18px;
@@ -177,7 +178,33 @@ p {
   line-height: 25px;
   /* 138.889% */
   letter-spacing: 0.36px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease-out; }
+  .btn-main::before {
+    background: #ab1d22;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    border-radius: 0 3px 3px 0;
+    transition: 0.3s ease-out; }
+  .btn-main::after {
+    content: url("../img/arrow-right.svg");
+    position: absolute;
+    top: 30%;
+    right: 12px;
+    opacity: 0;
+    transition: 0.3s ease-out; }
+  .btn-main:hover {
+    padding: 15px 75px 15px 45px; }
+    .btn-main:hover::before {
+      width: 30px; }
+    .btn-main:hover::after {
+      opacity: 1; }
 
 .btn-add {
   display: inline-flex;
@@ -196,7 +223,34 @@ p {
   line-height: 25px;
   /* 138.889% */
   letter-spacing: 0.36px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: 0.3s ease-out;
+  cursor: pointer; }
+  .btn-add:hover {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 2px #fff; }
+
+.btn-sec {
+  display: inline-flex;
+  padding: 15px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  background: #03466e;
+  color: #fff;
+  font-family: Mukta;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  /* 138.889% */
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  transition: 0.3s ease-out;
+  cursor: pointer; }
+  .btn-sec:hover {
+    background: #003a5d; }
 
 .hero {
   height: 642px;
