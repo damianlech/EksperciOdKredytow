@@ -317,7 +317,7 @@ p {
   .hero {
     height: 807px;
     box-shadow: none;
-    background-image: linear-gradient(90deg, rgba(0, 13, 20, 0.76) 43.59%, rgba(0, 37, 59, 0) 61.59%), url("../img/slider-1.png"); }
+    background-image: linear-gradient(90deg, #000d14 0%, rgba(0, 37, 59, 0) 100%), url("../img/slider-1.png"); }
     .hero-content__text-title {
       padding-bottom: 60px; }
       .hero-content__text-title h1 {
@@ -353,7 +353,7 @@ p {
 
 @media only screen and (min-width: 1400px) {
   .hero {
-    background-image: linear-gradient(90deg, rgba(0, 13, 20, 0.56) 53.59%, rgba(0, 37, 59, 0) 91.59%), url("../img/slider-1.png");
+    background-image: linear-gradient(90deg, #000d14 0%, rgba(0, 37, 59, 0) 100%), url("../img/slider-1.png");
     background-position: bottom; }
     .hero-content__text-title h1 {
       width: auto;
