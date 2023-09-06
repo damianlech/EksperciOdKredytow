@@ -155,6 +155,7 @@ header {
     &__item {
       transform: translateX(100vw);
       transition: 0.5s;
+      padding: 20px 0;
 
       &.open {
         transform: translateX(0);
@@ -164,21 +165,13 @@ header {
     &__link {
       display: inline-block;
       font-size: 2rem;
-      padding: 2rem 0;
       font-weight: 300;
       transition: 0.5s;
 
       &:hover {
         color: $color-secondary-2;
-        &::after {
-          content: "";
-          position: fixed;
-          bottom: 20px;
-          width: 92px;
-          height: 3px;
-          background: $color-secondary-2;
-          transition: 0.5s;
-        }
+        border-bottom: 3px solid $color-secondary-2;
+        transition: 0.1s ease-out;
       }
     }
   }
@@ -219,7 +212,7 @@ header {
 
       &__item {
         display: inline;
-        padding: 0 20px;
+        padding: 0 15px;
 
         &:last-child {
           padding-right: 0;
@@ -244,7 +237,7 @@ header {
   .nav {
     .menu-nav {
       &__item {
-        padding: 0 40px;
+        padding: 0 35px;
       }
     }
   }
