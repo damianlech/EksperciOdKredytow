@@ -253,7 +253,13 @@ p {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translateX(calc(-135px * 5)); } }
+    transform: translateX(calc(-135px * 10)); } }
+
+@keyframes scroll-large {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-270px * 10)); } }
 
 .carousel {
   height: 170px;
@@ -276,3 +282,14 @@ p {
         justify-content: center; }
         .carousel__content__track-item img {
           width: 135px; }
+
+@media only screen and (min-width: 992px) {
+  .carousel {
+    height: 325px; }
+    .carousel__content__track {
+      width: calc(270px * 10);
+      animation: scroll-large 40s linear infinite; }
+      .carousel__content__track-item {
+        padding: 60px; }
+        .carousel__content__track-item img {
+          width: 270px; } }

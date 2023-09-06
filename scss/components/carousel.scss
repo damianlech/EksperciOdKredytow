@@ -3,7 +3,16 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-135px * 5));
+    transform: translateX(calc(-135px * 10));
+  }
+}
+
+@keyframes scroll-large {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-270px * 10));
   }
 }
 
@@ -28,6 +37,24 @@
         justify-content: center;
         img {
           width: 135px;
+        }
+      }
+    }
+  }
+}
+
+@include rwd(l) {
+  .carousel {
+    height: 325px;
+    &__content {
+      &__track {
+        width: calc(270px * 10);
+        animation: scroll-large 40s linear infinite;
+        &-item {
+          padding: 60px;
+          img {
+            width: 270px;
+          }
         }
       }
     }
