@@ -41,16 +41,15 @@
     &__items {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       gap: 20px;
       justify-content: center;
-      align-items: stretch;
+      align-items: center;
 
       &__item {
         border-radius: 3px;
         background: #fff;
         padding: 30px;
-        max-width: 400px;
+        max-width: 280px;
 
         &-title {
           display: flex;
@@ -95,6 +94,19 @@
       &__items {
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: stretch;
+      }
+    }
+  }
+}
+
+@include rwd(xl) {
+  .whyUs {
+    &__content {
+      &__items {
+        &__item {
+          max-width: 300px;
+        }
       }
     }
   }
@@ -121,6 +133,11 @@
           line-height: 32px; /* 123.077% */
           letter-spacing: 1.04px;
           text-transform: uppercase;
+        }
+      }
+      &__items {
+        &__item {
+          max-width: 400px;
         }
       }
     }
