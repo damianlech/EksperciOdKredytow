@@ -1,5 +1,9 @@
 .container {
   width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
   @include rwd(s) {
     width: 540px;
   }
@@ -132,8 +136,8 @@ p {
   cursor: pointer;
 
   &:hover {
-    border: 2px solid #fff;
     background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 2px #fff;
   }
 }
 
@@ -159,8 +163,4 @@ p {
   &:hover {
     background: #003a5d;
   }
-}
-
-html {
-  background: blue;
 }

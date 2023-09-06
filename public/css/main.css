@@ -98,7 +98,11 @@ input {
   border-radius: 0; }
 
 .container {
-  width: 100%; }
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto; }
   @media only screen and (min-width: 576px) {
     .container {
       width: 540px; } }
@@ -220,8 +224,8 @@ p {
   transition: 0.3s ease-out;
   cursor: pointer; }
   .btn-add:hover {
-    border: 2px solid #fff;
-    background: rgba(0, 0, 0, 0.15); }
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 2px #fff; }
 
 .btn-sec {
   display: inline-flex;
@@ -244,6 +248,3 @@ p {
   cursor: pointer; }
   .btn-sec:hover {
     background: #003a5d; }
-
-html {
-  background: blue; }
