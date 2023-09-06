@@ -248,3 +248,77 @@ p {
   cursor: pointer; }
   .btn-sec:hover {
     background: #003a5d; }
+
+.offer__content {
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .offer__content__title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 30px; }
+    .offer__content__title-main {
+      display: flex;
+      align-items: center;
+      flex-basis: 100%; }
+      .offer__content__title-main h2 {
+        white-space: nowrap;
+        color: #03466e; }
+      .offer__content__title-main #h-line {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #d9d9d9;
+        margin-left: 15px; }
+    .offer__content__title-sub p {
+      flex-basis: 100%;
+      color: #ab1d22;
+      font-family: Mukta;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      /* 137.5% */
+      letter-spacing: 0.64px;
+      text-transform: uppercase;
+      padding-left: 10px; }
+  .offer__content__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+    .offer__content__items__item {
+      border-radius: 3px;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), lightgray 50%/cover no-repeat;
+      max-width: 330px;
+      height: 430px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .offer__content__items__item__text {
+        margin: 30px;
+        color: #fff;
+        font-family: Mukta;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        /* 137.5% */
+        letter-spacing: 0.32px; }
+        .offer__content__items__item__text ul {
+          list-style: inside;
+          padding-left: 5px; }
+        .offer__content__items__item__text h3 {
+          padding-bottom: 20px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 30px;
+          /* 125% */
+          letter-spacing: 0.96px;
+          text-transform: uppercase; }
+      .offer__content__items__item-button {
+        margin: 30px 20px;
+        text-decoration: none; }
