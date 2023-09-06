@@ -284,5 +284,8 @@ p {
       border-radius: 3px;
       background: #fff;
       padding: 30px; }
+      .whyUs__content__items__item-title {
+        display: flex;
+        gap: 15px; }
       .whyUs__content__items__item p {
         padding-top: 20px; }

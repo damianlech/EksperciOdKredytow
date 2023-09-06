@@ -46,6 +46,11 @@
         background: #fff;
         padding: 30px;
 
+        &-title {
+          display: flex;
+          gap: 15px;
+        }
+
         p {
           padding-top: 20px;
         }
