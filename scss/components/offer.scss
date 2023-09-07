@@ -43,28 +43,37 @@
       }
     }
     &__items {
-      position: relative;
-      width: 90vw;
+      width: 100vw;
+      padding: 0 10px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      align-items: center;
       gap: 10px;
       min-height: 608px;
       &__item {
         border-radius: 3px;
-        background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0.7) 100%
-          ),
-          lightgray 50% / cover no-repeat;
         max-width: 330px;
         min-height: 430px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-self: stretch;
+
+        &:nth-child(1) {
+          background-image: url("../img/offer-dark-1.jpg");
+        }
+        &:nth-child(2) {
+          background-image: url("../img/offer-dark-2.jpg");
+        }
+        &:nth-child(3) {
+          background-image: url("../img/offer-dark-3.jpg");
+        }
+        &:nth-child(4) {
+          background-image: url("../img/offer-dark-4.jpg");
+        }
+        &:nth-child(5) {
+          background-image: url("../img/offer-dark-5.jpg");
+        }
         &__text {
           margin: 30px;
           color: #fff;

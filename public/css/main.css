@@ -286,23 +286,31 @@ p {
       text-transform: uppercase;
       padding-left: 10px; }
   .offer__content__items {
-    position: relative;
-    width: 90vw;
+    width: 100vw;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     gap: 10px;
     min-height: 608px; }
     .offer__content__items__item {
       border-radius: 3px;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), lightgray 50%/cover no-repeat;
       max-width: 330px;
       min-height: 430px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-self: stretch; }
+      .offer__content__items__item:nth-child(1) {
+        background-image: url("../img/offer-dark-1.jpg"); }
+      .offer__content__items__item:nth-child(2) {
+        background-image: url("../img/offer-dark-2.jpg"); }
+      .offer__content__items__item:nth-child(3) {
+        background-image: url("../img/offer-dark-3.jpg"); }
+      .offer__content__items__item:nth-child(4) {
+        background-image: url("../img/offer-dark-4.jpg"); }
+      .offer__content__items__item:nth-child(5) {
+        background-image: url("../img/offer-dark-5.jpg"); }
       .offer__content__items__item__text {
         margin: 30px;
         color: #fff;
