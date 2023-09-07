@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-content container">
         <div class="hero-content__text">
           <div class="hero-content__text-title">
@@ -39,16 +39,26 @@
           </div>
         </div>
         <div class="hero-content__buttons">
-          <button class="btn-main">Skontaktuj się z nami</button>
-          <button class="btn-add">Dowiedz się więcej</button>
+          <a class="btn-main link" href="#">Skontaktuj się z nami</a>
+          <a class="btn-add link" href="#about">Dowiedz się więcej</a>
         </div>
         <div class="hero-content__more">
-          <a href="#"
+          <a href="#about" class="link"
             >Dowiedz się więcej <br />
             <img src="img/arrow.svg" alt="arrow icon"
           /></a>
         </div>
       </div>
     </section>
+    <section
+      class="carousel"
+      style="background-color: magenta; height: 300px"
+    ></section>
+    <section
+      class="about"
+      id="about"
+      style="background-color: teal; height: 800px"
+    ></section>
+    <script src="js/main.js"></script>
   </body>
 </html>

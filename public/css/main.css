@@ -254,12 +254,14 @@ p {
 
 .hero {
   height: 642px;
-  background-image: linear-gradient(90deg, rgba(0, 13, 20, 0.46) 4.03%, rgba(0, 37, 59, 0) 95.69%), url("../img/slider-1.png");
+  background-image: url("../img/slider-1.jpg");
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
   background-size: cover;
   background-position: 85%;
   display: flex;
   justify-content: center; }
+  .hero a {
+    text-decoration: none; }
   .hero-content {
     height: 100%;
     display: flex;
@@ -299,7 +301,8 @@ p {
       font-weight: 400; }
     .hero-content__more {
       display: none;
-      align-self: center; }
+      align-self: center;
+      width: 50%; }
       .hero-content__more a {
         color: #fff;
         text-align: center;
@@ -316,13 +319,11 @@ p {
 @media only screen and (min-width: 992px) {
   .hero {
     height: 807px;
-    box-shadow: none;
-    background-image: linear-gradient(90deg, #000d14 0%, rgba(0, 37, 59, 0) 100%), url("../img/slider-1.png"); }
+    box-shadow: none; }
     .hero-content__text-title {
       padding-bottom: 60px; }
       .hero-content__text-title h1 {
         font-size: 60px;
-        width: 370px;
         line-height: 60px; }
       .hero-content__text-title .sub {
         width: 173px;
@@ -338,7 +339,7 @@ p {
           text-transform: uppercase; }
     .hero-content__text-desc {
       padding: 0;
-      width: 370px; }
+      width: 50%; }
       .hero-content__text-desc p {
         font-size: 18px;
         font-style: normal;
@@ -351,18 +352,16 @@ p {
     .hero-content__buttons {
       align-items: baseline; } }
 
+@media only screen and (min-width: 1200px) {
+  .hero-content__more {
+    display: flex; } }
+
 @media only screen and (min-width: 1400px) {
-  .hero {
-    background-image: linear-gradient(90deg, #000d14 0%, rgba(0, 37, 59, 0) 100%), url("../img/slider-1.png");
-    background-position: bottom; }
-    .hero-content__text-title h1 {
-      width: auto;
-      font-size: 70px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: normal;
-      text-transform: uppercase; }
-    .hero-content__buttons {
-      flex-direction: row; }
-    .hero-content__more {
-      display: flex; } }
+  .hero-content__text-title h1 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase; }
+  .hero-content__buttons {
+    flex-direction: row; } }
