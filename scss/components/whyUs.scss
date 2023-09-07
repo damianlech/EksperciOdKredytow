@@ -1,10 +1,5 @@
 .whyUs {
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    lightgray 50% / cover no-repeat;
+  background-image: url("../img/whyUs-background.jpg");
 
   &__content {
     padding-top: 40px;
