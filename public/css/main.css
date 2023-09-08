@@ -97,6 +97,9 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
+button {
+  border: 0; }
+
 .container {
   width: 100%;
   padding-right: 1.5rem;
@@ -105,19 +108,19 @@ input {
   margin-left: auto; }
   @media only screen and (min-width: 576px) {
     .container {
-      width: 540px; } }
+      max-width: 540px; } }
   @media only screen and (min-width: 768px) {
     .container {
-      width: 720px; } }
+      max-width: 720px; } }
   @media only screen and (min-width: 992px) {
     .container {
-      width: 960px; } }
+      max-width: 960px; } }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 1140px; } }
+      max-width: 1140px; } }
   @media only screen and (min-width: 1400px) {
     .container {
-      width: 1320px; } }
+      max-width: 1320px; } }
 
 h1 {
   color: #fff;
@@ -258,6 +261,119 @@ a {
   line-height: normal;
   text-transform: uppercase; }
 
+.hero {
+  height: 642px;
+  background-image: url("../img/slider-1.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-position: 85%;
+  display: flex;
+  justify-content: center; }
+  .hero a {
+    text-decoration: none; }
+  .hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .hero-content__text-title {
+      padding-bottom: 30px; }
+      .hero-content__text-title .sub {
+        border-radius: 3px;
+        width: 123px;
+        height: 30px;
+        background-color: #e9262d;
+        display: flex;
+        justify-content: center; }
+        .hero-content__text-title .sub p {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          text-transform: uppercase; }
+    .hero-content__text-desc h2 {
+      border-left: thick solid #e9262d;
+      padding-left: 10px; }
+    .hero-content__text-desc p {
+      padding-top: 15px; }
+    .hero-content__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; }
+    .hero-content h2 {
+      color: white;
+      font-size: 20px;
+      font-weight: 700; }
+    .hero-content p {
+      color: white;
+      font-weight: 400; }
+    .hero-content__more {
+      display: none;
+      align-self: center;
+      width: 50%; }
+      .hero-content__more a {
+        color: #fff;
+        text-align: center;
+        font-family: Mukta;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px;
+        /* 156.25% */
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        text-decoration: none; }
+
+@media only screen and (min-width: 992px) {
+  .hero {
+    height: 807px;
+    box-shadow: none; }
+    .hero-content__text-title {
+      padding-bottom: 60px; }
+      .hero-content__text-title h1 {
+        font-size: 60px;
+        line-height: 60px; }
+      .hero-content__text-title .sub {
+        width: 173px;
+        height: 40px;
+        background-color: #e9262d;
+        display: flex;
+        justify-content: center; }
+        .hero-content__text-title .sub p {
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          text-transform: uppercase; }
+    .hero-content__text-desc {
+      padding: 0;
+      width: 50%; }
+      .hero-content__text-desc p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        /* 138.889% */
+        letter-spacing: 0.36px; }
+      .hero-content__text-desc b {
+        font-weight: 800; }
+    .hero-content__buttons {
+      align-items: baseline; } }
+
+@media only screen and (min-width: 1200px) {
+  .hero-content__more {
+    display: flex; } }
+
+@media only screen and (min-width: 1400px) {
+  .hero-content__text-title h1 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase; }
+  .hero-content__buttons {
+    flex-direction: row; } }
 html {
   background-color: magenta; }
 
