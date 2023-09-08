@@ -5,19 +5,19 @@
   margin-right: auto;
   margin-left: auto;
   @include rwd(s) {
-    width: 540px;
+    max-width: 540px;
   }
   @include rwd(m) {
-    width: 720px;
+    max-width: 720px;
   }
   @include rwd(l) {
-    width: 960px;
+    max-width: 960px;
   }
   @include rwd(xl) {
-    width: 1140px;
+    max-width: 1140px;
   }
   @include rwd(xxl) {
-    width: 1320px;
+    max-width: 1320px;
   }
 }
 
@@ -80,6 +80,7 @@ p {
   position: relative;
   cursor: pointer;
   transition: 0.3s ease-out;
+  text-decoration: none;
 
   &::before {
     background: $color-secondary-1;
@@ -163,4 +164,14 @@ p {
   &:hover {
     background: #003a5d;
   }
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: Mukta;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
