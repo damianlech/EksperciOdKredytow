@@ -249,18 +249,18 @@ p {
   .btn-sec:hover {
     background: #003a5d; }
 
-.whyUs {
-  background-image: url("../img/whyUs-background.jpg"); }
-  .whyUs__content {
+.reviews {
+  background-image: url("../img/reviews-background.jpg"); }
+  .reviews__content {
     padding-top: 40px;
     padding-bottom: 40px; }
-    .whyUs__content__title {
+    .reviews__content__title {
       padding-bottom: 30px; }
-      .whyUs__content__title h2 {
+      .reviews__content__title h2 {
         color: #fff;
         overflow: hidden;
         position: relative; }
-        .whyUs__content__title h2::after {
+        .reviews__content__title h2::after {
           content: "";
           border-bottom: solid 1px rgba(217, 217, 217, 0.25);
           position: absolute;
@@ -269,7 +269,7 @@ p {
           width: 100%;
           margin-right: -100%;
           margin-left: 20px; }
-      .whyUs__content__title p {
+      .reviews__content__title p {
         color: #fff;
         font-family: Mukta;
         font-size: 16px;
@@ -280,39 +280,39 @@ p {
         letter-spacing: 0.64px;
         text-transform: uppercase;
         padding-left: 10px; }
-    .whyUs__content__items {
+    .reviews__content__items {
       display: flex;
       flex-direction: column;
       gap: 20px;
       justify-content: center;
       align-items: center; }
-      .whyUs__content__items__item {
+      .reviews__content__items__item {
         border-radius: 3px;
         background: #fff;
         padding: 30px;
         max-width: 280px; }
-        .whyUs__content__items__item-title {
+        .reviews__content__items__item-title {
           display: flex;
           gap: 15px; }
-        .whyUs__content__items__item p {
+        .reviews__content__items__item p {
           padding-top: 20px; }
 
 @media only screen and (min-width: 768px) {
-  .whyUs__content {
+  .reviews__content {
     padding-top: 80px;
     padding-bottom: 80px; }
-    .whyUs__content__title {
+    .reviews__content__title {
       padding-bottom: 60px; }
-      .whyUs__content__title h2 {
+      .reviews__content__title h2 {
         font-size: 42px;
         font-style: normal;
         font-weight: 800;
         line-height: 45px;
         /* 107.143% */
         text-transform: uppercase; }
-        .whyUs__content__title h2::after {
+        .reviews__content__title h2::after {
           bottom: 21px; }
-      .whyUs__content__title p {
+      .reviews__content__title p {
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
@@ -320,26 +320,26 @@ p {
         /* 123.077% */
         letter-spacing: 1.04px;
         text-transform: uppercase; }
-    .whyUs__content__items {
+    .reviews__content__items {
       flex-direction: row;
       flex-wrap: wrap;
       align-items: stretch; } }
 
 @media only screen and (min-width: 1200px) {
-  .whyUs__content__items__item {
+  .reviews__content__items__item {
     max-width: 300px; } }
 
 @media only screen and (min-width: 1400px) {
-  .whyUs__content__title h2 {
+  .reviews__content__title h2 {
     font-size: 56px;
     font-style: normal;
     font-weight: 800;
     line-height: 60px;
     /* 107.143% */
     text-transform: uppercase; }
-    .whyUs__content__title h2::after {
+    .reviews__content__title h2::after {
       bottom: 28px; }
-  .whyUs__content__title p {
+  .reviews__content__title p {
     font-size: 26px;
     font-style: normal;
     font-weight: 300;
@@ -347,5 +347,5 @@ p {
     /* 123.077% */
     letter-spacing: 1.04px;
     text-transform: uppercase; }
-  .whyUs__content__items__item {
+  .reviews__content__items__item {
     max-width: 400px; } }

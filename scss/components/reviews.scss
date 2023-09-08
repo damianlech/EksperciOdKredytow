@@ -1,5 +1,5 @@
-.whyUs {
-  background-image: url("../img/whyUs-background.jpg");
+.reviews {
+  background-image: url("../img/reviews-background.jpg");
 
   &__content {
     padding-top: 40px;
@@ -60,7 +60,7 @@
 }
 
 @include rwd(m) {
-  .whyUs {
+  .reviews {
     &__content {
       padding-top: 80px;
       padding-bottom: 80px;
@@ -96,7 +96,7 @@
 }
 
 @include rwd(xl) {
-  .whyUs {
+  .reviews {
     &__content {
       &__items {
         &__item {
@@ -108,7 +108,7 @@
 }
 
 @include rwd(xxl) {
-  .whyUs {
+  .reviews {
     &__content {
       &__title {
         h2 {
