@@ -1,5 +1,6 @@
-.whyUs {
-  background-image: url("../img/whyUs-background.jpg");
+.reviews {
+  background-image: url("../img/reviews-background.jpg");
+
   &__content {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -43,7 +44,7 @@
         border-radius: 3px;
         background: #fff;
         padding: 30px;
-        max-width: 300px;
+        max-width: 280px;
 
         &-title {
           display: flex;
@@ -59,7 +60,7 @@
 }
 
 @include rwd(m) {
-  .whyUs {
+  .reviews {
     &__content {
       padding-top: 80px;
       padding-bottom: 80px;
@@ -95,7 +96,7 @@
 }
 
 @include rwd(xl) {
-  .whyUs {
+  .reviews {
     &__content {
       &__items {
         &__item {
@@ -107,7 +108,7 @@
 }
 
 @include rwd(xxl) {
-  .whyUs {
+  .reviews {
     &__content {
       &__title {
         h2 {
