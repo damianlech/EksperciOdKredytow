@@ -264,7 +264,8 @@ a {
   text-transform: uppercase; }
 
 .whyUs {
-  background-image: url("../img/whyUs-background.jpg"); }
+  background-image: url("../img/whyUs-background.jpg");
+  background-size: cover; }
   .whyUs__content {
     padding-top: 40px;
     padding-bottom: 40px; }
@@ -295,19 +296,18 @@ a {
         text-transform: uppercase;
         padding-left: 10px; }
     .whyUs__content__items {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      justify-content: center;
-      align-items: center; }
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-row-gap: 15px; }
       .whyUs__content__items__item {
         border-radius: 3px;
         background: #fff;
-        padding: 30px;
-        max-width: 300px; }
+        padding: 30px; }
         .whyUs__content__items__item-title {
           display: flex;
-          gap: 15px; }
+          gap: 15px;
+          align-items: center; }
         .whyUs__content__items__item p {
           padding-top: 20px; }
 
@@ -335,13 +335,19 @@ a {
         letter-spacing: 1.04px;
         text-transform: uppercase; }
     .whyUs__content__items {
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: stretch; } }
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px; }
+      .whyUs__content__items__item {
+        min-width: 300px;
+        flex-grow: 1;
+        flex-basis: 40%; } }
 
 @media only screen and (min-width: 1200px) {
-  .whyUs__content__items__item {
-    max-width: 300px; } }
+  .whyUs__content__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }
 
 @media only screen and (min-width: 1400px) {
   .whyUs__content__title h2 {
@@ -360,9 +366,7 @@ a {
     line-height: 32px;
     /* 123.077% */
     letter-spacing: 1.04px;
-    text-transform: uppercase; }
-  .whyUs__content__items__item {
-    max-width: 400px; } }
+    text-transform: uppercase; } }
 
 @keyframes scroll {
   0% {

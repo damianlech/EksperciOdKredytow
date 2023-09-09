@@ -1,5 +1,6 @@
 .whyUs {
   background-image: url("../img/whyUs-background.jpg");
+  background-size: cover;
   &__content {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -33,21 +34,20 @@
       }
     }
     &__items {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-row-gap: 15px;
 
       &__item {
         border-radius: 3px;
         background: #fff;
         padding: 30px;
-        max-width: 300px;
 
         &-title {
           display: flex;
           gap: 15px;
+          align-items: center;
         }
 
         p {
@@ -86,9 +86,15 @@
         }
       }
       &__items {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        &__item {
+          min-width: 300px;
+          flex-grow: 1;
+          flex-basis: 40%;
+        }
       }
     }
   }
@@ -98,9 +104,8 @@
   .whyUs {
     &__content {
       &__items {
-        &__item {
-          max-width: 300px;
-        }
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
       }
     }
   }
@@ -127,11 +132,6 @@
           line-height: 32px; /* 123.077% */
           letter-spacing: 1.04px;
           text-transform: uppercase;
-        }
-      }
-      &__items {
-        &__item {
-          max-width: 400px;
         }
       }
     }
