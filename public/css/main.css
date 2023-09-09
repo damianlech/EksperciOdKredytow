@@ -388,6 +388,7 @@ a {
     width: 100%; }
     .carousel__content__track {
       display: flex;
+      align-items: center;
       animation: scroll 20s linear infinite;
       width: calc(165px * 22); }
       .carousel__content__track-item {
@@ -400,12 +401,16 @@ a {
 @media only screen and (min-width: 992px) {
   .carousel {
     height: 325px; }
-    .carousel__content__track {
-      width: calc(330px * 22);
-      animation: scroll-large 20s linear infinite; }
-      .carousel__content__track-item {
-        padding: 60px;
-        width: 330px; } }
+    .carousel__content {
+      margin: 80px auto; }
+      .carousel__content__track {
+        height: 165px;
+        width: calc(330px * 22);
+        animation: scroll-large 20s linear infinite; }
+        .carousel__content__track-item {
+          padding: 60px;
+          width: 330px;
+          max-height: 120px; } }
 
 .about-content {
   display: flex;
