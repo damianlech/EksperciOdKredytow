@@ -519,7 +519,8 @@ a {
   background-size: cover;
   background-position: 85%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 72px; }
   .hero a {
     text-decoration: none; }
   .hero-content {
@@ -579,7 +580,9 @@ a {
 @media only screen and (min-width: 992px) {
   .hero {
     height: 807px;
-    box-shadow: none; }
+    box-shadow: none;
+    padding-top: 149px;
+    background-position: 85% 0%; }
     .hero-content__text-title {
       padding-bottom: 60px; }
       .hero-content__text-title h1 {
