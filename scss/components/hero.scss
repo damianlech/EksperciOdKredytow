@@ -9,6 +9,8 @@
   background-position: 85%;
   display: flex;
   justify-content: center;
+  margin-top: 72px;
+  scroll-margin-top: 149px;
 
   &-content {
     height: 100%;
@@ -88,6 +90,7 @@
   .hero {
     height: 807px;
     box-shadow: none;
+    padding-top: 149px;
 
     &-content {
       &__text {

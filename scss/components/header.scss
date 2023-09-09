@@ -36,7 +36,8 @@ header {
       }
     }
 
-    p {
+    p,
+    a {
       color: #fff;
       font-family: Mukta;
       font-size: 16px;
@@ -46,6 +47,11 @@ header {
       letter-spacing: 0.32px;
       align-items: center;
       display: flex;
+    }
+    .tel:hover {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      transition: 0.3s ease-out;
     }
     b {
       font-weight: 700;

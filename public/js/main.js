@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
@@ -39,16 +38,40 @@ function toggleMenu() {
   }
 }
 
-
 function smoothScroll() {
-  const link = document.querySelectorAll(".link");
+  const link = document.querySelectorAll(".link, .menu-nav__link");
 
   link.forEach((el) => {
     el.addEventListener("click", function (e) {
       e.preventDefault();
       const href = e.target.getAttribute("href");
       if (href !== null && href !== "#") {
-        document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+        document
+          .querySelector(href)
+          .scrollIntoView({ top: 149, behavior: "smooth" });
+      }
+    });
+  });
+}
+
+function showActive() {
+  const sections = document.querySelectorAll("section");
+  const links = document.querySelectorAll(".menu-nav__link");
+
+  window.addEventListener("scroll", () => {
+    let scrollPosition = window.scrollY + 500;
+
+    sections.forEach((section) => {
+      if (scrollPosition >= section.offsetTop) {
+        links.forEach((link) => {
+          link.classList.remove("active");
+          if (
+            section.getAttribute("id") ===
+            link.getAttribute("href").substring(1)
+          ) {
+            link.classList.add("active");
+          }
+        });
       }
     });
   });
@@ -56,4 +79,5 @@ function smoothScroll() {
 
 window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
+  showActive();
 });
