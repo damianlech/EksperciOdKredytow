@@ -8,6 +8,8 @@ const infobar = document.querySelector(".infobar");
 const infobarContent = document.querySelector(".infobar__content");
 const infoParagraph = document.querySelectorAll(".infoParagraph");
 
+let counter = 1;
+
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
@@ -77,6 +79,20 @@ function showActive() {
   });
 }
 
+function slider() {
+  const images = [
+    "../img/slider-1.jpg",
+    "../img/slider-2.jpg",
+    "../img/slider-3.jpg",
+    "../img/slider-4.jpg",
+  ];
+
+  const hero = document.querySelector("#hero");
+
+  hero.style.backgroundImage = `url(${images[counter]})`;
+  counter === 3 ? (counter = 0) : counter++;
+}
+setInterval(slider, 10000);
 window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
   showActive();

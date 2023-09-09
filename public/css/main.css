@@ -586,7 +586,8 @@ a {
   .hero {
     height: 807px;
     box-shadow: none;
-    padding-top: 149px; }
+    padding-top: 149px;
+    background-position: 85% 0%; }
     .hero-content__text-title {
       padding-bottom: 60px; }
       .hero-content__text-title h1 {
