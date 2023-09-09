@@ -359,67 +359,102 @@ a {
       .offer-content__items__item-button {
         margin: 30px 20px;
         text-decoration: none; }
-  .offer-content-popup {
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+.offer-popup {
+  padding: 0;
+  margin: auto;
+  border: none;
+  border-radius: 3px; }
+  .offer-popup::backdrop {
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
     overflow: scroll; }
-    .offer-content-popup:target {
-      visibility: visible;
-      opacity: 1; }
-    .offer-content-popup__item {
-      background: white;
-      padding: 30px; }
-      .offer-content-popup__item-image {
-        display: none; }
-      .offer-content-popup__item-text b {
-        font-weight: 700; }
-      .offer-content-popup__item-text-nav__link {
-        display: inline-block;
-        font-weight: 700;
-        transition: 0.5s;
-        margin: 10px 0; }
-        .offer-content-popup__item-text-nav__link:first-child {
-          padding-top: 0; }
-        .offer-content-popup__item-text-nav__link:hover {
-          border-bottom: 3px solid #e9262d;
-          transition: 0.1s ease-out; }
-      .offer-content-popup__item-text-nav .active {
-        border-bottom: 3px solid #e9262d; }
-      .offer-content-popup__item-text-info {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; }
-        .offer-content-popup__item-text-info li {
+  .offer-popup__item {
+    background: white;
+    display: flex; }
+    .offer-popup__item-image {
+      display: none; }
+    .offer-popup__item-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0;
+      gap: 30px;
+      justify-content: space-between; }
+      .offer-popup__item-content__text {
+        padding: 0 30px; }
+        .offer-popup__item-content__text h3 {
+          width: 50%; }
+        .offer-popup__item-content__text b {
+          font-weight: 700; }
+        .offer-popup__item-content__text img {
+          max-width: 100%;
+          max-height: 100%; }
+        .offer-popup__item-content__text-nav {
           display: flex;
-          gap: 20px; }
-      .offer-content-popup__item-text .close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        transition: all 200ms;
-        font-size: 30px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #333; }
-      .offer-content-popup__item-text-line {
-        width: 100%;
-        height: 1px;
-        background: #e9e9e9;
-        margin-bottom: 30px; }
+          flex-direction: column;
+          align-items: center;
+          gap: 15px; }
+          .offer-popup__item-content__text-nav__link {
+            display: inline-block;
+            font-size: 1.3rem;
+            font-weight: 700;
+            transition: 0.5s;
+            background-color: white; }
+            .offer-popup__item-content__text-nav__link:first-child {
+              padding-top: 0; }
+            .offer-popup__item-content__text-nav__link:hover {
+              border-bottom: 3px solid #e9262d;
+              transition: 0.1s ease-out; }
+          .offer-popup__item-content__text-nav .active {
+            border-bottom: 3px solid #e9262d; }
+        .offer-popup__item-content__text-info {
+          display: none;
+          padding: 30px 0; }
+          .offer-popup__item-content__text-info ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px; }
+            .offer-popup__item-content__text-info ul li {
+              display: flex;
+              gap: 20px; }
+          .offer-popup__item-content__text-info.open {
+            display: block; }
+        .offer-popup__item-content__text .close {
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          transition: all 200ms;
+          font-size: 30px;
+          font-weight: bold;
+          text-decoration: none;
+          color: #333;
+          background-color: transparent;
+          cursor: pointer; }
+        .offer-popup__item-content__text-line {
+          width: 100%;
+          height: 1px;
+          background: #e9e9e9;
+          margin-bottom: 30px; }
+        .offer-popup__item-content__text-images {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: center;
+          padding-bottom: 30px; }
 
 @media only screen and (min-width: 768px) {
   .offer-content__items {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 10px;
-    width: 100vw; } }
+    width: 100vw; }
+  .offer-popup__item-content__text-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; } }
 
 @media only screen and (min-width: 992px) {
   .offer h3 {
@@ -465,7 +500,7 @@ a {
     line-height: 25px;
     /* 138.889% */
     letter-spacing: 0.36px; }
-  .offer-content__items__item a {
+  .offer-content__items__item button {
     visibility: hidden;
     transform: translateY(15px);
     transition: 0.3s ease-out; }
@@ -477,13 +512,38 @@ a {
     .offer-content__items__item:hover ul {
       visibility: visible;
       transform: none; }
-    .offer-content__items__item:hover a {
+    .offer-content__items__item:hover button {
       visibility: visible;
-      transform: none; } }
+      transform: none; }
+  .offer-popup__item-image {
+    display: block;
+    object-fit: cover; }
+  .offer-popup__item-content {
+    padding: 30px; }
+    .offer-popup__item-content__text {
+      padding: 0; }
+      .offer-popup__item-content__text-nav {
+        flex-direction: row;
+        justify-content: space-between; }
+    .offer-popup__item-content p {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 25px;
+      /* 138.889% */
+      letter-spacing: 0.36px; }
+    .offer-popup__item-content a {
+      align-self: flex-end; } }
 
 @media only screen and (min-width: 1400px) {
   .offer-content__items__item {
-    max-width: 350px; } }
+    max-width: 350px; }
+  .offer-popup__item-content__text-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; } }
 
 .whyUs {
   background-image: url("../img/whyUs-background.jpg"); }
