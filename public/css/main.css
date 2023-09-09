@@ -634,7 +634,8 @@ header {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 1000; }
 
 .infobar {
   display: none;
@@ -687,7 +688,7 @@ header {
       .infobar__content-social a {
         line-height: 0; }
       .infobar__content-social img {
-        height: 50px;
+        height: 35px;
         margin: 10px; }
       .infobar__content-social #line {
         content: "";
@@ -783,7 +784,10 @@ header {
       transition: 0.5s;
       padding: 20px 0; }
       .nav .menu-nav__item.open {
-        transform: translateX(0); }
+        transform: translateX(0);
+        padding: 0; }
+        .nav .menu-nav__item.open a {
+          font-size: 1.5rem; }
     .nav .menu-nav__link {
       display: inline-block;
       font-size: 2rem;

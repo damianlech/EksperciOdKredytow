@@ -7,6 +7,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 1000;
 }
 
 .infobar {
@@ -79,7 +80,7 @@ header {
       }
 
       img {
-        height: 50px;
+        height: 35px;
         margin: 10px;
       }
 
@@ -204,6 +205,10 @@ header {
 
       &.open {
         transform: translateX(0);
+        padding: 0;
+        a {
+          font-size: 1.5rem;
+        }
       }
     }
 
