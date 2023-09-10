@@ -59,12 +59,15 @@
       min-height: 608px;
       &__item {
         border-radius: 3px;
-        max-width: 330px;
+        width: 330px;
         min-height: 430px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-self: stretch;
+        flex-grow: 1;
+        background-size: cover;
+        background-position: center center;
 
         &:nth-child(1) {
           background-image: url("../img/offer-dark-1.jpg");
@@ -154,6 +157,7 @@
               &:hover {
                 border-bottom: 3px solid $color-secondary-2;
                 transition: 0.1s ease-out;
+                cursor: pointer;
               }
             }
             .active {
@@ -213,7 +217,7 @@
       &__items {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0 10px;
+        padding: 0 65px;
 
         width: 100vw;
       }
@@ -320,6 +324,7 @@
         &-image {
           display: block;
           object-fit: cover;
+          object-position: right;
         }
         &-content {
           padding: 30px;
@@ -348,13 +353,6 @@
 
 @include rwd(xxl) {
   .offer {
-    &-content {
-      &__items {
-        &__item {
-          max-width: 350px;
-        }
-      }
-    }
     &-popup {
       &__item {
         &-content {

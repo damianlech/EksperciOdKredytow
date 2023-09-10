@@ -327,12 +327,15 @@ a {
     min-height: 608px; }
     .offer-content__items__item {
       border-radius: 3px;
-      max-width: 330px;
+      width: 330px;
       min-height: 430px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-self: stretch; }
+      align-self: stretch;
+      flex-grow: 1;
+      background-size: cover;
+      background-position: center center; }
       .offer-content__items__item:nth-child(1) {
         background-image: url("../img/offer-dark-1.jpg"); }
       .offer-content__items__item:nth-child(2) {
@@ -405,7 +408,8 @@ a {
               padding-top: 0; }
             .offer-popup__item-content__text-nav__link:hover {
               border-bottom: 3px solid #e9262d;
-              transition: 0.1s ease-out; }
+              transition: 0.1s ease-out;
+              cursor: pointer; }
           .offer-popup__item-content__text-nav .active {
             border-bottom: 3px solid #e9262d; }
         .offer-popup__item-content__text-info {
@@ -447,7 +451,7 @@ a {
   .offer-content__items {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 10px;
+    padding: 0 65px;
     width: 100vw; }
   .offer-popup__item-content__text-images {
     display: grid;
@@ -517,7 +521,8 @@ a {
       transform: none; }
   .offer-popup__item-image {
     display: block;
-    object-fit: cover; }
+    object-fit: cover;
+    object-position: right; }
   .offer-popup__item-content {
     padding: 30px; }
     .offer-popup__item-content__text {
@@ -536,8 +541,6 @@ a {
       align-self: flex-end; } }
 
 @media only screen and (min-width: 1400px) {
-  .offer-content__items__item {
-    max-width: 350px; }
   .offer-popup__item-content__text-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
