@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -353,7 +357,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews__content container">
         <div class="reviews__content__title">
           <div class="reviews__content__title-main">
@@ -422,9 +426,25 @@
         </div>
         <div class="reviews__content__buttons">
           <a href="#" class="btn-main">Skontaktuj się z nami</a>
-          <a href="#" class="btn-add">Więcej opinii</a>
+          <button id="pop-reviews-popup" class="btn-add">Więcej opinii</button>
         </div>
       </div>
+      <dialog class="reviews-popup container" id="reviews-popup">
+        <div class="reviews-popup__item">
+          <form method="dialog">
+            <button class="close">&times;</button>
+          </form>
+          <div class="reviews-popup__item-content">
+            <img src="../img/reviews/review1.jpg" alt="review1" />
+            <img src="../img/reviews/review4.jpg" alt="review2" />
+            <img src="../img/reviews/review3.jpg" alt="review3" />
+            <img src="../img/reviews/review2.jpg" alt="review4" />
+            <img src="../img/reviews/review5.jpg" alt="review5" />
+            <img src="../img/reviews/review6.jpg" alt="review6" />
+            <img src="../img/reviews/review7.jpg" alt="review7" />
+          </div>
+        </div>
+      </dialog>
     </section>
     <script src="js/main.js"></script>
   </body>

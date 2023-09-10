@@ -332,6 +332,38 @@ a {
       flex-direction: column;
       gap: 15px;
       align-items: center; }
+  .reviews-popup {
+    padding: 0;
+    margin: auto;
+    border: none;
+    border-radius: 3px; }
+    .reviews-popup::backdrop {
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      overflow: scroll; }
+    .reviews-popup__item-content {
+      padding: 60px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center; }
+      .reviews-popup__item-content img {
+        width: 330px;
+        max-width: 100%;
+        border: 1px solid black;
+        object-fit: contain; }
+    .reviews-popup__item .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+      background-color: transparent;
+      cursor: pointer; }
 
 @media only screen and (min-width: 768px) {
   .reviews__content {

@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
@@ -8,6 +7,9 @@ const logo = document.querySelector(".header-logo");
 const infobar = document.querySelector(".infobar");
 const infobarContent = document.querySelector(".infobar__content");
 const infoParagraph = document.querySelectorAll(".infoParagraph");
+
+const reviewBtn = document.getElementById("pop-reviews-popup");
+const reviewsPopup = document.getElementById("reviews-popup");
 
 let showMenu = false;
 
@@ -39,7 +41,6 @@ function toggleMenu() {
   }
 }
 
-
 function smoothScroll() {
   const link = document.querySelectorAll(".link");
 
@@ -56,4 +57,8 @@ function smoothScroll() {
 
 window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
+});
+
+reviewBtn.addEventListener("click", () => {
+  reviewsPopup.showModal();
 });
