@@ -298,7 +298,6 @@ a {
     .whyUs__content__items {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
       grid-row-gap: 15px; }
       .whyUs__content__items__item {
         border-radius: 3px;
@@ -336,7 +335,6 @@ a {
         text-transform: uppercase; }
     .whyUs__content__items {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px; }
       .whyUs__content__items__item {
@@ -346,8 +344,7 @@ a {
 
 @media only screen and (min-width: 1200px) {
   .whyUs__content__items {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media only screen and (min-width: 1400px) {
   .whyUs__content__title h2 {
