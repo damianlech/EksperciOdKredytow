@@ -16,6 +16,9 @@ const showInsuranceButton = document.querySelectorAll(
 
 let counter = 1;
 
+const reviewBtn = document.getElementById("pop-reviews-popup");
+const reviewsPopup = document.getElementById("reviews-popup");
+
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
