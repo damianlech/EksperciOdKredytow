@@ -1,0 +1,62 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-165px * 11));
+  }
+}
+
+@keyframes scroll-large {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-330px * 11));
+  }
+}
+
+.carousel {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  &__content {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &__track {
+      display: flex;
+      align-items: center;
+      animation: scroll 20s linear infinite;
+      width: calc(165px * 22);
+      &-item {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 165px;
+      }
+    }
+  }
+}
+
+@include rwd(l) {
+  .carousel {
+    height: 325px;
+    &__content {
+      margin: 80px auto;
+      &__track {
+        height: 165px;
+        width: calc(330px * 22);
+        animation: scroll-large 20s linear infinite;
+        &-item {
+          padding: 60px;
+          width: 330px;
+          max-height: 120px;
+        }
+      }
+    }
+  }
+}
