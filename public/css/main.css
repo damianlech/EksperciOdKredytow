@@ -308,12 +308,11 @@ a {
         border-radius: 3px;
         border: 1px solid #d7d7d7;
         background: #fff;
-        max-width: 330px;
+        width: 300px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; }
-        .how-content__items__item:nth-child(1) {
-          max-width: none; }
+        justify-content: center;
+        flex-grow: 1; }
         .how-content__items__item-text {
           padding: 30px; }
           .how-content__items__item-text h3 {
@@ -340,12 +339,14 @@ a {
             margin: 15px 0; }
         .how-content__items__item-contact {
           background-image: url("../img/how-img.jpg");
+          background-size: cover;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           padding-bottom: 8px;
-          min-width: 330px; }
+          min-width: 330px;
+          width: 100%; }
           .how-content__items__item-contact a {
             text-decoration: none; }
           .how-content__items__item-contact__text {
@@ -387,7 +388,10 @@ a {
 
 @media only screen and (min-width: 768px) {
   .how-content__items__item {
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap; }
+    .how-content__items__item:nth-child(1) {
+      max-width: none;
+      flex-basis: 100%; } }
 
 @media only screen and (min-width: 992px) {
   .how h3 {

@@ -50,13 +50,11 @@
         border-radius: 3px;
         border: 1px solid #d7d7d7;
         background: #fff;
-        max-width: 330px;
+        width: 300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        &:nth-child(1) {
-          max-width: none;
-        }
+        flex-grow: 1;
         &-text {
           padding: 30px;
           h3 {
@@ -85,12 +83,14 @@
         }
         &-contact {
           background-image: url("../img/how-img.jpg");
+          background-size: cover;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           padding-bottom: 8px;
           min-width: 330px;
+          width: 100%;
           a {
             text-decoration: none;
           }
@@ -151,6 +151,11 @@
       &__items {
         &__item {
           flex-wrap: nowrap;
+
+          &:nth-child(1) {
+            max-width: none;
+            flex-basis: 100%;
+          }
         }
       }
     }
