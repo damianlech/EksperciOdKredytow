@@ -1,215 +1,249 @@
 .how {
-    background-color: $color-background;
-    padding: 40px 0;
-    &-content {
-      padding: 0 15px;
-      &__title {
+  scroll-margin-top: 72px;
+  background-color: $color-background;
+  padding: 40px 0;
+  &-content {
+    padding: 0 15px;
+    &__title {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-bottom: 30px;
+      &-main {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        padding-bottom: 30px;
-        &-main {
-          display: flex;
-          align-items: center;
-          flex-basis: 100%;
-          h2 {
-            white-space: nowrap;
-            color: $color-primary-1;
-          }
-  
-          #h-line {
-            content: "";
-            width: 100%;
-            height: 1px;
-            background: #d9d9d9;
-            margin-left: 15px;
-          }
+        flex-basis: 100%;
+        h2 {
+          white-space: nowrap;
+          color: $color-primary-1;
         }
-        &-sub {
-          p {
-            flex-basis: 100%;
-            color: $color-secondary-1;
-            font-family: Mukta;
-            font-size: 16px;
+
+        #h-line {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: #d9d9d9;
+          margin-left: 15px;
+        }
+      }
+      &-sub {
+        p {
+          flex-basis: 100%;
+          color: $color-secondary-1;
+          font-family: Mukta;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 22px; /* 137.5% */
+          letter-spacing: 0.64px;
+          text-transform: uppercase;
+          padding-left: 10px;
+        }
+      }
+    }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      &__item {
+        border-radius: 3px;
+        border: 1px solid #d7d7d7;
+        background: #fff;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-grow: 1;
+        &-text {
+          padding: 30px;
+          h3 {
+            color: $color-primary-1;
+            font-size: 20px;
             font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 120% */
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+          }
+          span {
+            color: $color-secondary-1;
+            font-size: 16px;
             font-weight: 300;
             line-height: 22px; /* 137.5% */
-            letter-spacing: 0.64px;
+            letter-spacing: 0.32px;
+          }
+          #h-line {
+            content: "";
+            width: 50%;
+            height: 1px;
+            background: #d9d9d9;
+            margin: 15px 0;
+          }
+        }
+        &-contact {
+          background-image: url("../img/how-img.jpg");
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 8px;
+          min-width: 330px;
+          width: 100%;
+          a {
+            text-decoration: none;
+          }
+          &__text {
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            & > * {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            p {
+              display: flex;
+              white-space: nowrap;
+            }
+            .how-name {
+              font-family: Mukta;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 24px; /* 120% */
+              letter-spacing: 0.4px;
+              text-transform: uppercase;
+            }
+            &--dorota {
+              .how-name {
+                color: $color-secondary-2;
+              }
+            }
+            &--miroslaw {
+              .how-name {
+                color: $color-primary-2;
+              }
+            }
+            .how-number {
+              color: #fff;
+              font-family: Mukta;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 22px; /* 137.5% */
+              letter-spacing: 0.32px;
+              text-decoration-line: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rwd(m) {
+  .how {
+    &-content {
+      &__items {
+        &__item {
+          flex-wrap: nowrap;
+
+          &:nth-child(1) {
+            max-width: none;
+            flex-basis: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rwd(l) {
+  .how {
+    scroll-margin-top: 149px;
+    h3 {
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 38px; /* 111.765% */
+      letter-spacing: 1.36px;
+      text-transform: uppercase;
+    }
+    &-content {
+      &__title {
+        &-main {
+          h2 {
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 60px; /* 107.143% */
             text-transform: uppercase;
-            padding-left: 10px;
+          }
+        }
+
+        &-sub {
+          p {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px; /* 123.077% */
+            letter-spacing: 1.04px;
+            text-transform: uppercase;
           }
         }
       }
       &__items {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
         &__item {
-          border-radius: 3px;
-          border: 1px solid #d7d7d7;
-          background: #fff;
-          width: 300px;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          flex-grow: 1;
           &-text {
-            padding: 30px;
             h3 {
-              color: $color-primary-1;
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 24px; /* 120% */
-              letter-spacing: 0.8px;
-              text-transform: uppercase;
+              font-size: 26px;
+              line-height: 32px;
+              letter-spacing: 1.04px;
             }
             span {
-              color: $color-secondary-1;
-              font-size: 16px;
-              font-weight: 300;
-              line-height: 22px; /* 137.5% */
-              letter-spacing: 0.32px;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 25px;
+              letter-spacing: 0.36px;
             }
-            #h-line {
-              content: "";
-              width: 50%;
-              height: 1px;
-              background: #d9d9d9;
-              margin: 15px 0;
+            p {
+              font-size: 18px;
+              line-height: 25px;
+              letter-spacing: 0.36px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@include rwd(xxl) {
+  .how {
+    &-content {
+      &__items {
+        &__item {
           &-contact {
-            background-image: url("../img/how-img.jpg");
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 8px;
-            min-width: 330px;
-            width: 100%;
-            a {
-              text-decoration: none;
-            }
+            background-image: url("../img/how-img-alt.jpg");
+            flex-basis: 100%;
+            max-width: 570px;
+
             &__text {
-              padding: 30px 0;
-              display: flex;
-              flex-direction: column;
-              gap: 30px;
-              & > * {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-              }
-              p {
-                display: flex;
-                white-space: nowrap;
-              }
+              flex-direction: row;
+              width: 100%;
+              justify-content: space-evenly;
               .how-name {
-                font-family: Mukta;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 800;
-                line-height: 24px; /* 120% */
-                letter-spacing: 0.4px;
+                font-size: 26px;
+                line-height: 32px; /* 120% */
+                letter-spacing: 0.52px;
                 text-transform: uppercase;
               }
-              &--dorota {
-                .how-name {
-                  color: $color-secondary-2;
-                }
-              }
-              &--miroslaw {
-                .how-name {
-                  color: $color-primary-2;
-                }
-              }
               .how-number {
-                color: #fff;
-                font-family: Mukta;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 22px; /* 137.5% */
-                letter-spacing: 0.32px;
-                text-decoration-line: underline;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  
-  @include rwd(m) {
-    .how {
-      &-content {
-        &__items {
-          &__item {
-            flex-wrap: nowrap;
-  
-            &:nth-child(1) {
-              max-width: none;
-              flex-basis: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-  
-  @include rwd(l) {
-    .how {
-      h3 {
-        font-size: 34px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 38px; /* 111.765% */
-        letter-spacing: 1.36px;
-        text-transform: uppercase;
-      }
-      &-content {
-        &__title {
-          &-main {
-            h2 {
-              font-size: 56px;
-              font-style: normal;
-              font-weight: 800;
-              line-height: 60px; /* 107.143% */
-              text-transform: uppercase;
-            }
-          }
-  
-          &-sub {
-            p {
-              font-size: 26px;
-              font-style: normal;
-              font-weight: 300;
-              line-height: 32px; /* 123.077% */
-              letter-spacing: 1.04px;
-              text-transform: uppercase;
-            }
-          }
-        }
-        &__items {
-          &__item {
-            &-text {
-              h3 {
-                font-size: 26px;
-                line-height: 32px;
-                letter-spacing: 1.04px;
-              }
-              span {
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 25px;
-                letter-spacing: 0.36px;
-              }
-              p {
                 font-size: 18px;
                 line-height: 25px;
                 letter-spacing: 0.36px;
@@ -220,37 +254,4 @@
       }
     }
   }
-  
-  @include rwd(xxl) {
-    .how {
-      &-content {
-        &__items {
-          &__item {
-            &-contact {
-              background-image: url("../img/how-img-alt.jpg");
-              flex-basis: 100%;
-              max-width: 570px;
-  
-              &__text {
-                flex-direction: row;
-                width: 100%;
-                justify-content: space-evenly;
-                .how-name {
-                  font-size: 26px;
-                  line-height: 32px; /* 120% */
-                  letter-spacing: 0.52px;
-                  text-transform: uppercase;
-                }
-                .how-number {
-                  font-size: 18px;
-                  line-height: 25px;
-                  letter-spacing: 0.36px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  
+}

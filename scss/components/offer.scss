@@ -1,4 +1,5 @@
 .offer {
+  scroll-margin-top: 72px;
   h3 {
     padding-bottom: 20px;
     font-size: 24px;
@@ -242,6 +243,7 @@
 
 @include rwd(l) {
   .offer {
+    scroll-margin-top: 149px;
     h3 {
       font-size: 34px;
       font-style: normal;

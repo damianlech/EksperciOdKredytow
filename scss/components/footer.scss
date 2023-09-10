@@ -1,0 +1,156 @@
+.footer {
+  background: linear-gradient(
+      0deg,
+      rgba(9, 28, 90, 0.22) 0%,
+      rgba(9, 28, 90, 0.22) 100%
+    ),
+    $color-primary-1;
+  h2 {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.32px;
+  }
+
+  &-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 53px;
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      &__item {
+        &--wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          &__logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+              width: 100%;
+            }
+          }
+          &__address {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+            padding: 0 10px;
+            &-title {
+              flex-basis: 100%;
+            }
+            &-text {
+              display: flex;
+              gap: 15px;
+              img {
+                max-width: 28px;
+              }
+            }
+          }
+        }
+
+        &--contact {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          justify-content: center;
+          &-subItem {
+            display: flex;
+            gap: 23px;
+            img {
+              max-width: 80px;
+            }
+            &__info {
+              display: flex;
+              flex-direction: column;
+              gap: 11px;
+              &--miroslaw {
+                color: $color-primary-2;
+              }
+              &--dorota {
+                color: $color-secondary-2;
+              }
+              a {
+                color: #fff;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px; /* 137.5% */
+                letter-spacing: 0.32px;
+                text-transform: none;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+              .tel b {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+                transition: 0.3s ease-out;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+    }
+  }
+}
+
+@include rwd(m) {
+  .footer {
+    h2,
+    p,
+    a {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px; /* 138.889% */
+      letter-spacing: 0.36px;
+    }
+    br {
+      display: none;
+    }
+    &-content {
+      &__items {
+        flex-direction: row;
+        &__item {
+          &--contact {
+            &-subItem {
+              img {
+                max-width: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
