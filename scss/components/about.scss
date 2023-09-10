@@ -1,5 +1,4 @@
 .about {
-  scroll-margin-top: 72px;
   &-content {
     display: flex;
     flex-direction: column;
@@ -79,7 +78,6 @@
 }
 @include rwd(l) {
   .about {
-    scroll-margin-top: 149px;
     &-content {
       &__title {
         &-main {
