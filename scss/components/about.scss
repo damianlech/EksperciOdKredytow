@@ -1,6 +1,6 @@
 .about {
+  scroll-margin-top: 72px;
   &-content {
-    padding: 0 15px;
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
@@ -79,6 +79,7 @@
 }
 @include rwd(l) {
   .about {
+    scroll-margin-top: 149px;
     &-content {
       &__title {
         &-main {
