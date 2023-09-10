@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-   
-    <header>
+    <header id="header">
       <div class="infobar">
         <div class="infobar__content container">
           <div class="infobar__content-contact">
@@ -28,17 +27,17 @@
               <b>Masz pytanie?</b>&nbsp; Skontaktuj się z nami!
             </p>
 
-            <p>
+            <a href="tel:607667757" class="tel">
               <img src="img/phone.svg" alt="phone icon" />
               &nbsp;
               <b>607 667 757</b>
-            </p>
+            </a>
 
-            <p>
+            <a href="tel:530150042" class="tel">
               <img src="img/phone.svg" alt="phone icon" />
               &nbsp;
               <b>530 150 042</b>
-            </p>
+            </a>
           </div>
           <div class="infobar__content-social">
             <p class="infoParagraph">Znajdź nas w mediach społecznościowych!</p>
@@ -65,23 +64,23 @@
         <nav class="nav">
           <ul class="menu-nav">
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link active">
+              <a href="#hero" class="menu-nav__link active">
                 <img src="img/home.svg" alt="home icon" />&nbsp; Home
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#about" class="menu-nav__link">
                 <img src="img/about.svg" alt="about icon" />&nbsp; O nas
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#offer" class="menu-nav__link">
                 <img src="img/services.svg" alt="services icon" />&nbsp; Nasze
                 usługi
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#how" class="menu-nav__link">
                 <img src="img/work.svg" alt="work icon" />&nbsp; Jak działamy?
               </a>
             </li>
@@ -127,7 +126,7 @@
       </div>
     </section>
 
-    <section class="carousel">
+    <section class="carousel" id="carousel">
       <div class="carousel__content">
         <div class="carousel__content__track">
           <div class="carousel__content__track-item">
@@ -200,7 +199,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-content container">
         <div class="about-content__title">
           <div class="about-content__title-main">
@@ -275,7 +274,7 @@
       </div>
     </section>
 
-    <section class="whyUs">
+    <section class="whyUs" id="whyUs">
       <div class="whyUs__content container">
         <div class="whyUs__content__title">
           <div class="whyUs__content__title-main">
@@ -353,107 +352,7 @@
           </div>
         </div>
       </div>
-
-      </section>
-
-      <section class="how">
-        <div class="how-content container">
-          <div class="how-content__title">
-            <div class="how-content__title-main">
-              <h2>Jak działamy?</h2>
-              <p id="h-line"></p>
-            </div>
-            <div class="how-content__title-sub">
-              <p class="sub">Eksperci od Kredytów.pl</p>
-            </div>
-          </div>
-          <div class="how-content__items">
-            <div class="how-content__items__item">
-              <div class="how-content__items__item-text">
-                <h3><span>Krok 1</span><br />Skontaktuj się z nami</h3>
-                <p id="h-line"></p>
-                <p>
-                  Napisz do nas lub zadzwon, umówimy się na bezpłatną konsultację
-                  w dogodnym dla Ciebie terminie i formie (spotkanie w biurze,
-                  on-line, rozmowa telefoniczna).
-                </p>
-              </div>
-              <div class="how-content__items__item-contact">
-                <div class="how-content__items__item-contact__text">
-                  <div class="how-content__items__item-contact__text--dorota">
-                    <p>
-                      <span class="how-name">dorota lech</span>
-                    </p>
-                    <p>
-                      <img src="img/how-phone-red.svg" alt="phone icon" />&nbsp;
-                      <span class="how-number">607 667 757</span>
-                    </p>
-                  </div>
-                  <div class="how-content__items__item-contact__text--miroslaw">
-                    <p>
-                      <span class="how-name">mirosław kantor</span>
-                    </p>
-                    <p>
-                      <img src="img/how-phone-blue.svg" alt="phone icon" />&nbsp;
-                      <span class="how-number">530 150 042</span>
-                    </p>
-                  </div>
-                </div>
-                <a href="#" class="btn-main">Skontaktuj się z nami</a>
-              </div>
-            </div>
-            <div class="how-content__items__item">
-              <div class="how-content__items__item-text">
-                <h3><span>Krok 2</span><br />Konsultacja</h3>
-                <p id="h-line"></p>
-                <p>
-                  Po określeniu Twoich potrzeb i możliwości finansowych,
-                  przedstawimy najkorzystniejsze dla Ciebie oferty i rozwiązania a
-                  Ty wybierzesz i podejmiesz ostateczną decyzję, do których banków
-                  złożymy wnioski.
-                </p>
-              </div>
-            </div>
-            <div class="how-content__items__item">
-              <div class="how-content__items__item-text">
-                <h3><span>Krok 3</span><br />Pomoc eksperta</h3>
-                <p id="h-line"></p>
-                <p>
-                  Zajmiemy się całym procesem kredytowym dbając o wszelkie
-                  formalności, ograniczając Twój czas i udział w nim do minimum.
-                  Pomożemy w analizie wszelkiej dokumentacji nieruchomości oraz
-                  decyzji i umów kredytowych. Z nami ubezpieczysz również
-                  nieruchomość oraz życie (jeśli bank będzie tego wymagał).
-                </p>
-              </div>
-            </div>
-            <div class="how-content__items__item">
-              <div class="how-content__items__item-text">
-                <h3><span>Krok 4</span><br />Odbiór mieszkania z ekspertem</h3>
-                <p id="h-line"></p>
-                <p>
-                  Aby ten ostatni etap również należał do bezstresowych - po
-                  odbiór kluczy możesz udać się w asyście naszego inżyniera, który
-                  sprawdzi stan techniczny zakupionej nieruchomości i pomoże w
-                  formalnościach zdawczo-odbiorczych.
-                </p>
-              </div>
-            </div>
-            <div class="how-content__items__item">
-              <div class="how-content__items__item-text">
-                <h3><span>Krok 5</span><br />Opieka eksperta</h3>
-                <p id="h-line"></p>
-                <p>
-                  Po uruchomieniu kredytu nadal pozostajemy z Tobą w stałym
-                  kontakcie i pomagamy jeśli pojawią się nowe możliwości obniżenia
-                  kosztów kredytu.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
