@@ -7,6 +7,12 @@ const logo = document.querySelector(".header-logo");
 const infobar = document.querySelector(".infobar");
 const infobarContent = document.querySelector(".infobar__content");
 const infoParagraph = document.querySelectorAll(".infoParagraph");
+const showButtonAll = document.querySelectorAll(
+  ".offer-content__items__item-button"
+);
+const showInsuranceButton = document.querySelectorAll(
+  ".offer-popup__item-content__text-nav__link"
+);
 
 let counter = 1;
 
@@ -97,3 +103,29 @@ window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
   showActive();
 });
+
+showButtonAll.forEach((el) =>
+  el.addEventListener("click", () => {
+    id = el.id.slice(5);
+    const dialog = document.getElementById(id);
+    dialog.showModal();
+  })
+);
+
+showInsuranceButton.forEach((el) =>
+  el.addEventListener("click", () => {
+    document
+      .querySelectorAll(".offer-popup__item-content__text-nav__link.active")[0]
+      .classList.remove("active");
+
+    document
+      .querySelectorAll(".offer-popup__item-content__text-info.open")[0]
+      .classList.remove("open");
+
+    el.classList.add("active");
+
+    id = el.id.slice(4);
+
+    document.getElementById(id).classList.add("open");
+  })
+);
