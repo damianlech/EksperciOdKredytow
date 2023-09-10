@@ -7,7 +7,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  z-index: 1000;
 }
 
 .infobar {
@@ -36,8 +35,7 @@ header {
       }
     }
 
-    p,
-    a {
+    p {
       color: #fff;
       font-family: Mukta;
       font-size: 16px;
@@ -47,11 +45,6 @@ header {
       letter-spacing: 0.32px;
       align-items: center;
       display: flex;
-    }
-    .tel:hover {
-      color: #fff;
-      border-bottom: 1px solid #fff;
-      transition: 0.3s ease-out;
     }
     b {
       font-weight: 700;
@@ -86,7 +79,7 @@ header {
       }
 
       img {
-        height: 35px;
+        height: 50px;
         margin: 10px;
       }
 
@@ -211,10 +204,6 @@ header {
 
       &.open {
         transform: translateX(0);
-        padding: 0;
-        a {
-          font-size: 1.5rem;
-        }
       }
     }
 
