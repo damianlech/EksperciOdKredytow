@@ -1,0 +1,141 @@
+.rodo {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $color-background;
+  transition: opacity 500ms;
+  overflow: scroll;
+  padding-top: 72px;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  &-content {
+    padding-top: 40px;
+    position: relative;
+    &-close {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-bottom: 50px;
+      &-main {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        h2 {
+          white-space: nowrap;
+          color: $color-primary-1;
+        }
+
+        #h-line {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: #d9d9d9;
+          margin-left: 15px;
+        }
+      }
+      &-sub {
+        p {
+          flex-basis: 100%;
+          color: $color-secondary-1;
+          font-family: Mukta;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 22px; /* 137.5% */
+          letter-spacing: 0.64px;
+          text-transform: uppercase;
+          padding-left: 10px;
+        }
+      }
+    }
+    &__text {
+      ol {
+        list-style-type: decimal;
+        list-style-position: inside;
+        li {
+          color: #000;
+          font-family: Mukta;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          padding: 20px;
+          ol {
+            li {
+              color: #222;
+              font-family: Mukta;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 25px;
+              letter-spacing: 0.32px;
+              text-transform: none;
+              padding: 5px;
+              ul {
+                padding-left: 3rem;
+                list-style-type: lower-latin;
+              }
+              #dotted {
+                list-style-type: disc;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rwd(l) {
+  .rodo {
+    padding-top: 149px;
+    &-content {
+      padding-top: 80px;
+      &__title {
+        padding-bottom: 100px;
+        &-main {
+          h2 {
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 60px; /* 107.143% */
+            text-transform: uppercase;
+          }
+        }
+
+        &-sub {
+          p {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px; /* 123.077% */
+            letter-spacing: 1.04px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
