@@ -132,3 +132,7 @@ showInsuranceButton.forEach((el) =>
     document.getElementById(id).classList.add("open");
   })
 );
+
+reviewBtn.addEventListener("click", () => {
+  reviewsPopup.showModal();
+});
