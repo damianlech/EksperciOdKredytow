@@ -59,6 +59,26 @@ p {
   line-height: 22px; /* 137.5% */
   letter-spacing: 0.32px;
 }
+label {
+  font-family: Mukta;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+input,
+textarea {
+  color: #222;
+  font-family: Mukta;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -173,14 +193,4 @@ a {
   &:hover {
     background: #003a5d;
   }
-}
-a {
-  text-decoration: none;
-  color: #000;
-  font-family: Mukta;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
 }

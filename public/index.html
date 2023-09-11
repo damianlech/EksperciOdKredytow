@@ -68,28 +68,28 @@
         <nav class="nav">
           <ul class="menu-nav">
             <li class="menu-nav__item">
-              <a href="#hero" class="menu-nav__link active">
+              <a href="#hero" class="menu-nav__link link active">
                 <img src="img/home.svg" alt="home icon" />&nbsp; Home
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#about" class="menu-nav__link">
+              <a href="#about" class="menu-nav__link link">
                 <img src="img/about.svg" alt="about icon" />&nbsp; O nas
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#offer" class="menu-nav__link">
+              <a href="#offer" class="menu-nav__link link">
                 <img src="img/services.svg" alt="services icon" />&nbsp; Nasze
                 usługi
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#how" class="menu-nav__link">
+              <a href="#how" class="menu-nav__link link">
                 <img src="img/work.svg" alt="work icon" />&nbsp; Jak działamy?
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#form" class="menu-nav__link">
                 <img src="img/phone2.svg" alt="phone2 icon" />&nbsp; Kontakt
               </a>
             </li>
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="hero-content__buttons">
-          <a class="btn-main link" href="#">Skontaktuj się z nami</a>
+          <a class="btn-main" href="#form">Skontaktuj się z nami</a>
           <a class="btn-add link" href="#about">Dowiedz się więcej</a>
         </div>
         <div class="hero-content__more">
@@ -274,7 +274,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn-main link">Skontaktuj się z nami</a>
+        <a href="#form" class="btn-main">Skontaktuj się z nami</a>
       </div>
     </section>
 
@@ -845,7 +845,7 @@
                   </p>
                 </div>
               </div>
-              <a href="#" class="btn-main">Skontaktuj się z nami</a>
+              <a href="#form" class="btn-main">Skontaktuj się z nami</a>
             </div>
           </div>
           <div class="how-content__items__item">
@@ -968,7 +968,7 @@
           </div>
         </div>
         <div class="reviews__content__buttons">
-          <a href="#" class="btn-main">Skontaktuj się z nami</a>
+          <a href="#form" class="btn-main">Skontaktuj się z nami</a>
           <button id="pop-reviews-popup" class="btn-add">Więcej opinii</button>
         </div>
       </div>
@@ -988,6 +988,80 @@
           </div>
         </div>
       </dialog>
+    </section>
+    <section class="form" id="form">
+      <div class="form-content container">
+        <a href="#" class="form-content-close">&times;</a>
+        <form action="">
+          <div class="form-content__title">
+            <div class="form-content__title-main">
+              <h2>napisz do nas wiadomość</h2>
+            </div>
+            <div class="form-content__title-sub">
+              <p>odezwiemy się jak najszybciej</p>
+            </div>
+          </div>
+          <div class="form-content__fields">
+            <div class="form-content__fields-wrap">
+              <div class="form-content__fields__field">
+                <label for="form-name">Imię i nazwisko:</label>
+                <input
+                  type="text"
+                  name="form-name"
+                  id="form-name"
+                  placeholder="Wprowadź swoje imię i nazwisko..."
+                  required
+                />
+              </div>
+              <div class="form-content__fields__field">
+                <label for="form-email">Adres e-mail:</label>
+                <input
+                  type="email"
+                  name="form-email"
+                  id="form-email"
+                  placeholder="Wprowadź swój adres e-mail..."
+                  required
+                />
+              </div>
+              <div class="form-content__fields__field">
+                <label for="form-tel">Numer Telefonu:</label>
+                <input
+                  type="tel"
+                  name="form-tel"
+                  id="form-tel"
+                  placeholder="Wprowadź swój numer kontaktowy..."
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-content__fields__field">
+              <label for="form-area">Twoja wiadomość:</label>
+              <textarea
+                name="form-area"
+                id="form-area"
+                placeholder="Wpisz wiadomość..."
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-content__checkbox">
+            <input
+              type="checkbox"
+              name="form-checkbox"
+              id="form-checkbox"
+              required
+            />
+            <label for="form-checkbox">
+              Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
+              kontaktu: <a href="#rodo">polityka prywatności</a></label
+            >
+          </div>
+          <div class="form-content__btn">
+            <button type="submit" class="btn-main">Wyślij wiadomość</button>
+          </div>
+        </form>
+        <img src="../img/mail-img.svg" alt="Mail Image" />
+      </div>
     </section>
     <article class="rodo" id="rodo">
       <div class="rodo-content container">

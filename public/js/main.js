@@ -50,7 +50,7 @@ function toggleMenu() {
 }
 
 function smoothScroll() {
-  const link = document.querySelectorAll(".link, .menu-nav__link");
+  const link = document.querySelectorAll(".link");
 
   link.forEach((el) => {
     el.addEventListener("click", function (e) {
