@@ -1,34 +1,9 @@
 .rodo {
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: $color-background;
-  transition: opacity 500ms;
-  overflow: scroll;
   padding-top: 72px;
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
   &-content {
     padding-top: 40px;
     position: relative;
-    &-close {
-      position: absolute;
-      top: 0;
-      right: 30px;
-      transition: all 200ms;
-      font-size: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #333;
-      background-color: transparent;
-      cursor: pointer;
-    }
     &__title {
       display: flex;
       align-items: center;
