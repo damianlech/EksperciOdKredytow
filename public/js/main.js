@@ -19,6 +19,10 @@ let counter = 1;
 const reviewBtn = document.getElementById("pop-reviews-popup");
 const reviewsPopup = document.getElementById("reviews-popup");
 
+const voucherBtn = document.getElementById("voucherBtn");
+const voucher = document.getElementById("voucher");
+const voucherWrapper = document.getElementById("side__voucher-wrapper");
+
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
@@ -136,3 +140,14 @@ showInsuranceButton.forEach((el) =>
 reviewBtn.addEventListener("click", () => {
   reviewsPopup.showModal();
 });
+
+voucherBtn.addEventListener("click", () => {
+  voucher.showModal();
+});
+
+// here's the closing part:
+voucher.addEventListener("click", (event) => {
+  voucher.close();
+});
+
+voucherWrapper.addEventListener("click", (event) => event.stopPropagation());
