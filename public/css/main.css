@@ -902,7 +902,9 @@ a {
   .hero a {
     text-decoration: none; }
   .hero-background {
-    position: relative; }
+    position: absolute;
+    height: 100%;
+    width: 100%; }
     .hero-background__item {
       position: absolute;
       width: 100vw;
