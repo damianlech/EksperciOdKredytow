@@ -907,7 +907,7 @@ a {
     width: 100%; }
     .hero-background__item {
       position: absolute;
-      width: 100vw;
+      width: 100%;
       height: 100%;
       background-size: cover;
       transition: 1s linear; }
