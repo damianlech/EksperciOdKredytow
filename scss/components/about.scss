@@ -84,17 +84,17 @@
       &__title {
         &-main {
           h2 {
-            font-size: 56px;
+            font-size: 42px;
             font-style: normal;
             font-weight: 800;
-            line-height: 60px; /* 107.143% */
+            line-height: 45px; /* 107.143% */
             text-transform: uppercase;
           }
         }
 
         &-sub {
           p {
-            font-size: 26px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: 32px; /* 123.077% */
@@ -160,6 +160,28 @@
 @include rwd(xxl) {
   .about {
     &-content {
+      &__title {
+        &-main {
+          h2 {
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 60px; /* 107.143% */
+            text-transform: uppercase;
+          }
+        }
+
+        &-sub {
+          p {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px; /* 123.077% */
+            letter-spacing: 1.04px;
+            text-transform: uppercase;
+          }
+        }
+      }
       &__bios {
         &__item {
           img {

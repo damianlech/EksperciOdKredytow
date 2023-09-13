@@ -51,7 +51,7 @@
         border-radius: 3px;
         border: 1px solid #d7d7d7;
         background: #fff;
-        width: 300px;
+        width: 265px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -166,14 +166,42 @@
 @include rwd(l) {
   .how {
     scroll-margin-top: 149px;
-    h3 {
-      font-size: 34px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 38px; /* 111.765% */
-      letter-spacing: 1.36px;
-      text-transform: uppercase;
+    &-content {
+      &__title {
+        &-main {
+          h2 {
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 45px; /* 107.143% */
+            text-transform: uppercase;
+          }
+        }
+
+        &-sub {
+          p {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px; /* 123.077% */
+            letter-spacing: 1.04px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      &__items {
+        &__item {
+          &-text {
+            padding: 15px;
+          }
+        }
+      }
     }
+  }
+}
+
+@include rwd(xxl) {
+  .how {
     &-content {
       &__title {
         &-main {
@@ -199,41 +227,28 @@
       }
       &__items {
         &__item {
-          &-text {
-            h3 {
-              font-size: 26px;
-              line-height: 32px;
-              letter-spacing: 1.04px;
-            }
-            span {
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 25px;
-              letter-spacing: 0.36px;
-            }
-            p {
-              font-size: 18px;
-              line-height: 25px;
-              letter-spacing: 0.36px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@include rwd(xxl) {
-  .how {
-    &-content {
-      &__items {
-        &__item {
           &-contact {
             background-image: url("../img/how-img-alt.jpg");
             flex-basis: 100%;
             max-width: 570px;
 
             &__text {
+              h3 {
+                font-size: 26px;
+                line-height: 32px;
+                letter-spacing: 1.04px;
+              }
+              span {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: 0.36px;
+              }
+              p {
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.36px;
+              }
               flex-direction: row;
               width: 100%;
               justify-content: space-evenly;

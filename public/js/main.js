@@ -109,6 +109,9 @@ setInterval(slider, 10000);
 window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
   showActive();
+  setTimeout(function () {
+    voucher.showModal();
+  }, 3000);
 });
 
 showButtonAll.forEach((el) =>

@@ -246,16 +246,6 @@ header {
 }
 
 @include rwd(l) {
-  .header {
-    height: 113px;
-    padding: 0;
-    &-logo {
-      &__img {
-        height: 80px;
-      }
-    }
-  }
-
   .infobar {
     display: flex;
     img {
@@ -299,7 +289,16 @@ header {
   }
 }
 
-@include rwd(xl) {
+@include rwd(xxl) {
+  .header {
+    height: 113px;
+    padding: 0;
+    &-logo {
+      &__img {
+        height: 80px;
+      }
+    }
+  }
   .nav {
     .menu-nav {
       &__item {

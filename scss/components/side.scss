@@ -131,17 +131,15 @@
 
 @include rwd(l) {
   .side {
-    top: 160px;
+    top: 100px;
     &__buttons {
-      &-form {
-        display: block;
-        width: 235px;
-      }
       &-voucherBtn {
         width: 235px;
       }
     }
     &__voucher {
+      max-height: none;
+      margin-top: 120px;
       margin-right: calc((100vw - 960px) / 2);
     }
   }
@@ -159,6 +157,18 @@
   .side {
     &__voucher {
       margin-right: calc((100vw - 1320px) / 2);
+    }
+  }
+}
+
+@include rwd(xxl) {
+  .side {
+    top: 160px;
+    &__buttons {
+      &-form {
+        display: block;
+        width: 235px;
+      }
     }
   }
 }

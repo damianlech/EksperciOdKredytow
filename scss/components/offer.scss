@@ -57,11 +57,9 @@
       flex-direction: column;
       justify-content: space-around;
       gap: 10px;
-      min-height: 608px;
       &__item {
         border-radius: 3px;
         width: 330px;
-        min-height: 430px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -69,6 +67,15 @@
         flex-grow: 1;
         background-size: cover;
         background-position: center center;
+        button {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 22px; /* 137.5% */
+          letter-spacing: 0.64px;
+          text-transform: uppercase;
+          padding: 15px 0;
+        }
 
         &:nth-child(1) {
           background-image: url("../img/offer-dark-1.jpg");
@@ -86,7 +93,8 @@
           background-image: url("../img/offer-dark-5.jpg");
         }
         &__text {
-          margin: 30px;
+          margin: 15px;
+          margin-bottom: 0;
           color: #fff;
           font-family: Mukta;
           font-size: 16px;
@@ -218,7 +226,7 @@
       &__items {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0 65px;
+        padding: 0 15px;
 
         width: 100vw;
       }
@@ -244,29 +252,22 @@
 @include rwd(l) {
   .offer {
     scroll-margin-top: 149px;
-    h3 {
-      font-size: 34px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 38px; /* 111.765% */
-      letter-spacing: 1.36px;
-      text-transform: uppercase;
-    }
+
     &-content {
       &__title {
         &-main {
           h2 {
-            font-size: 56px;
+            font-size: 42px;
             font-style: normal;
             font-weight: 800;
-            line-height: 60px; /* 107.143% */
+            line-height: 45px; /* 107.143% */
             text-transform: uppercase;
           }
         }
 
         &-sub {
           p {
-            font-size: 26px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: 32px; /* 123.077% */
@@ -276,26 +277,17 @@
         }
       }
       &__items {
+        flex-wrap: nowrap;
         &__item {
           p {
             visibility: hidden;
             transform: translateY(15px);
             transition: 0.3s ease-out;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 25px; /* 138.889% */
-            letter-spacing: 0.36px;
           }
           ul {
             visibility: hidden;
             transform: translateY(15px);
             transition: 0.3s ease-out;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 25px; /* 138.889% */
-            letter-spacing: 0.36px;
           }
           button {
             visibility: hidden;
@@ -355,6 +347,63 @@
 
 @include rwd(xxl) {
   .offer {
+    h3 {
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 38px; /* 111.765% */
+      letter-spacing: 1.36px;
+      text-transform: uppercase;
+    }
+    &-content {
+      &__title {
+        &-main {
+          h2 {
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 60px; /* 107.143% */
+            text-transform: uppercase;
+          }
+        }
+
+        &-sub {
+          p {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px; /* 123.077% */
+            letter-spacing: 1.04px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      &__items {
+        padding: 0 35px;
+        &__item {
+          p {
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: 0.3s ease-out;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px; /* 138.889% */
+            letter-spacing: 0.36px;
+          }
+          ul {
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: 0.3s ease-out;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px; /* 138.889% */
+            letter-spacing: 0.36px;
+          }
+        }
+      }
+    }
     &-popup {
       &__item {
         &-content {
