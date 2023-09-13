@@ -47,9 +47,8 @@
 
 @include rwd(l) {
   .carousel {
-    height: 325px;
+    margin: 40px auto;
     &__content {
-      margin: 80px auto;
       &__track {
         height: 165px;
         width: calc(330px * 22);
@@ -61,5 +60,11 @@
         }
       }
     }
+  }
+}
+
+@include rwd(xxl) {
+  .carousel {
+    margin: 80px auto;
   }
 }

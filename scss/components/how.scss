@@ -143,9 +143,12 @@
               align-items: center;
               gap: 10px;
             }
-            .tel b:hover {
-              border-bottom: 1px solid #fff;
+            .tel b {
+              border-bottom: 1px solid transparent;
               transition: 0.3s ease-out;
+            }
+            .tel b:hover {
+              border-color: #fff;
             }
           }
         }
@@ -217,6 +220,7 @@
 
 @include rwd(xxl) {
   .how {
+    padding: 80px 0;
     &-content {
       &__title {
         &-main {

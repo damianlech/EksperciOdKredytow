@@ -48,10 +48,13 @@ header {
       align-items: center;
       display: flex;
     }
-    .tel:hover {
+    .tel b {
       color: #fff;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid transparent;
       transition: 0.3s ease-out;
+    }
+    .tel b:hover {
+      border-color: #fff;
     }
     b {
       font-weight: 700;
@@ -112,7 +115,7 @@ header {
 
     &__img {
       height: 65px;
-      padding: 5px 0;
+      padding: 10px 0;
     }
     &.open {
       position: absolute;

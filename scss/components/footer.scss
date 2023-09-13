@@ -68,6 +68,8 @@
               display: flex;
               gap: 15px;
               border-bottom: 1px solid transparent;
+
+              transition: 0.3s ease-out;
               &:hover {
                 border-color: #fff;
                 transition: 0.3s ease-out;
@@ -127,10 +129,13 @@
                   border-bottom: 1px solid transparent;
                 }
               }
+              .tel b,
+              .mail b {
+                transition: 0.3s ease-out;
+              }
               .tel b:hover,
               .mail b:hover {
                 border-color: #fff;
-                transition: 0.3s ease-out;
               }
             }
           }

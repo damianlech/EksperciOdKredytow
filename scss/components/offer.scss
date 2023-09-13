@@ -292,11 +292,13 @@
         flex-wrap: nowrap;
         &__item {
           p {
+            color: #fff;
             opacity: 0;
             transform: translateY(15px);
             transition: 0.3s ease-out;
           }
           ul {
+            color: #fff;
             opacity: 0;
             transform: translateY(15px);
             transition: 0.3s ease-out;
@@ -360,6 +362,7 @@
       text-transform: uppercase;
     }
     &-content {
+      padding: 80px 15px;
       &__title {
         &-main {
           h2 {
@@ -386,7 +389,6 @@
         padding: 0 35px;
         &__item {
           p {
-            visibility: hidden;
             transform: translateY(15px);
             transition: 0.3s ease-out;
             font-size: 18px;
@@ -396,7 +398,6 @@
             letter-spacing: 0.36px;
           }
           ul {
-            visibility: hidden;
             transform: translateY(15px);
             transition: 0.3s ease-out;
             font-size: 18px;

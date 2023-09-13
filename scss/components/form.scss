@@ -2,7 +2,8 @@
   background: $color-background;
   transition: opacity 500ms;
   overflow: scroll;
-  padding-top: 72px;
+  padding-top: 108px;
+  overflow-x: hidden;
   &-wrap {
     display: flex;
     flex-direction: row;
@@ -185,17 +186,17 @@
       &__title {
         &-main {
           h2 {
-            font-size: 56px;
+            font-size: 42px;
             font-style: normal;
             font-weight: 800;
-            line-height: 60px; /* 107.143% */
+            line-height: 45px; /* 107.143% */
             text-transform: uppercase;
           }
         }
 
         &-sub {
           p {
-            font-size: 26px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 300;
             line-height: 32px; /* 123.077% */
@@ -206,16 +207,6 @@
       }
       &__fields {
         flex-direction: row;
-        &__field {
-          input,
-          textarea {
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 25px; /* 138.889% */
-            letter-spacing: 0.36px;
-          }
-        }
       }
       &-buttons {
         flex-direction: row;
@@ -223,7 +214,7 @@
         &__checkbox {
           flex-basis: 55%;
           label {
-            font-size: 18px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 25px; /* 138.889% */
@@ -279,6 +270,51 @@
     &-content {
       padding-top: 80px;
       padding-bottom: 80px;
+      &__title {
+        &-main {
+          h2 {
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 60px; /* 107.143% */
+            text-transform: uppercase;
+          }
+        }
+
+        &-sub {
+          p {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px; /* 123.077% */
+            letter-spacing: 1.04px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      &__fields {
+        &__field {
+          input,
+          textarea {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 25px; /* 138.889% */
+            letter-spacing: 0.36px;
+          }
+        }
+      }
+      &-buttons {
+        &__checkbox {
+          label {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px; /* 138.889% */
+            letter-spacing: 0.36px;
+          }
+        }
+      }
       form {
         gap: 60px;
       }
