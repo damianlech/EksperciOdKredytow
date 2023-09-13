@@ -169,19 +169,13 @@
 
 @include rwd(l) {
   .form {
-    padding-top: 149px;
-
     &-content {
-      padding-top: 80px;
-      padding-bottom: 80px;
       &__title {
         h2::after {
           bottom: 30px;
         }
       }
-      form {
-        gap: 60px;
-      }
+
       label {
         font-size: 18px;
         font-style: normal;
@@ -273,6 +267,7 @@
 
 @include rwd(xxl) {
   .form {
+    padding-top: 149px;
     &-wrap {
       width: calc(1320px + ((100vw - 1320px) / 2));
       margin-right: 0;
@@ -281,6 +276,13 @@
     }
     &-image {
       display: block;
+    }
+    &-content {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      form {
+        gap: 60px;
+      }
     }
   }
 }
@@ -300,6 +302,7 @@
   letter-spacing: 0.64px;
   color: $color-secondary-1;
   text-transform: uppercase;
+  align-self: self-start;
 }
 
 .fcf-checkbox:hover,
@@ -311,4 +314,8 @@
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+
+.requires {
+  color: $color-secondary-2;
 }

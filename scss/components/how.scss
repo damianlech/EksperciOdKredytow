@@ -96,7 +96,7 @@
             text-decoration: none;
           }
           &__text {
-            padding: 30px 0;
+            padding-bottom: 30px;
             display: flex;
             flex-direction: column;
             gap: 30px;
@@ -129,15 +129,21 @@
                 color: $color-primary-2;
               }
             }
-            .how-number {
+            a {
               color: #fff;
-              font-family: Mukta;
               font-size: 16px;
               font-style: normal;
               font-weight: 700;
               line-height: 22px; /* 137.5% */
               letter-spacing: 0.32px;
-              text-decoration-line: underline;
+              text-transform: none;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+            .tel b:hover {
+              border-bottom: 1px solid #fff;
+              transition: 0.3s ease-out;
             }
           }
         }
@@ -191,8 +197,16 @@
       }
       &__items {
         &__item {
-          &-text {
-            padding: 15px;
+          &-contact {
+            background-image: url("../img/how-img-alt.jpg");
+            background-position: 60% 0;
+            flex-basis: 100%;
+            max-width: 570px;
+            height: 100%;
+            padding: 30px;
+            &__text {
+              flex-direction: row;
+            }
           }
         }
       }
@@ -228,10 +242,6 @@
       &__items {
         &__item {
           &-contact {
-            background-image: url("../img/how-img-alt.jpg");
-            flex-basis: 100%;
-            max-width: 570px;
-
             &__text {
               h3 {
                 font-size: 26px;

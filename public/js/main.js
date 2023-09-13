@@ -14,8 +14,6 @@ const showInsuranceButton = document.querySelectorAll(
   ".offer-popup__item-content__text-nav__link"
 );
 
-let counter = 1;
-
 const reviewBtn = document.getElementById("pop-reviews-popup");
 const reviewsPopup = document.getElementById("reviews-popup");
 
@@ -92,20 +90,6 @@ function showActive() {
   });
 }
 
-function slider() {
-  const images = [
-    "../img/slider-1.jpg",
-    "../img/slider-2.jpg",
-    "../img/slider-3.jpg",
-    "../img/slider-4.jpg",
-  ];
-
-  const hero = document.querySelector("#hero");
-
-  hero.style.backgroundImage = `url(${images[counter]})`;
-  counter === 3 ? (counter = 0) : counter++;
-}
-setInterval(slider, 10000);
 window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
   showActive();
@@ -148,9 +132,26 @@ voucherBtn.addEventListener("click", () => {
   voucher.showModal();
 });
 
-// here's the closing part:
 voucher.addEventListener("click", (event) => {
   voucher.close();
 });
 
 voucherWrapper.addEventListener("click", (event) => event.stopPropagation());
+
+const slider = document.querySelectorAll(".hero-background__item");
+
+let slideCount = 0;
+
+function sliderRun() {
+  if (slideCount < 3) {
+    slider[slideCount].style.opacity = 0;
+    slider[slideCount + 1].style.opacity = 1;
+    slideCount++;
+  } else {
+    slider[slideCount].style.opacity = 0;
+    slider[0].style.opacity = 1;
+    slideCount = 0;
+  }
+}
+
+setInterval(sliderRun, 10000);

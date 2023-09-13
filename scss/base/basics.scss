@@ -192,3 +192,15 @@ a {
     background: #003a5d;
   }
 }
+
+@include rwd(xxl) {
+  p {
+    color: #222;
+    font-family: Mukta;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 138.889% */
+    letter-spacing: 0.36px;
+  }
+}

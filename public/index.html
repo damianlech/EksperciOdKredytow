@@ -46,7 +46,10 @@
           <div class="infobar__content-social">
             <p class="infoParagraph">Znajdź nas w mediach społecznościowych!</p>
             <p id="line" class="infoParagraph"></p>
-            <a href="https://www.facebook.com/EksperciOdKredytow">
+            <a
+              href="https://www.facebook.com/EksperciOdKredytow"
+              target="_blank"
+            >
               <img src="img/facebook.svg" alt="facebook icon" />
             </a>
           </div>
@@ -54,12 +57,13 @@
       </div>
       <div class="header container">
         <div class="header-logo">
-          <img
-            title="Eksperci od kredytów Logo"
-            src="./img/logo.svg"
-            alt="Eksperci od kredytów Logo"
-            class="header-logo__img"
-          />
+          <a href="https://www.eksperciodkredytow.pl">
+            <img
+              title="Eksperci od kredytów Logo"
+              src="./img/logo.svg"
+              alt="Eksperci od kredytów Logo"
+              class="header-logo__img"
+          /></a>
         </div>
         <div class="menu-btn">
           <span class="menu-btn__burger"></span>
@@ -157,6 +161,12 @@
     </div>
 
     <section class="hero" id="hero">
+      <div class="hero-background">
+        <div class="hero-background__item" id="slider-1"></div>
+        <div class="hero-background__item" id="slider-2"></div>
+        <div class="hero-background__item" id="slider-3"></div>
+        <div class="hero-background__item" id="slider-4"></div>
+      </div>
       <div class="hero-content container">
         <div class="hero-content__text">
           <div class="hero-content__text-title">
@@ -519,11 +529,9 @@
       </div>
       <dialog class="offer-popup container" id="popup-1">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-1.jpg"
-            alt="offer-over-1 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-1.jpg" alt="offer-over-1 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Kredyty hipoteczne</h3>
@@ -563,11 +571,9 @@
       </dialog>
       <dialog class="offer-popup container" id="popup-2">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-2.jpg"
-            alt="offer-over-2 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-2.jpg" alt="offer-over-2 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Kredyty gotówkowe</h3>
@@ -594,11 +600,9 @@
       </dialog>
       <dialog class="offer-popup container" id="popup-3">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-3.jpg"
-            alt="offer-over-3 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-3.jpg" alt="offer-over-3 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Kredyty firmowe</h3>
@@ -624,11 +628,9 @@
       </dialog>
       <dialog class="offer-popup container" id="popup-4">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-4.jpg"
-            alt="offer-over-4 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-4.jpg" alt="offer-over-4 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Ubezpieczenia</h3>
@@ -826,11 +828,13 @@
       </dialog>
       <dialog class="offer-popup container" id="popup-5">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-5.jpg"
-            alt="offer-over-5 image"
-          />
+          <div class="offer-popup__item-image">
+            <img
+              class="offer-popup__item"
+              src="img/offer-over-5.jpg"
+              alt="offer-over-5 image"
+            />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>pozostałe usługi</h3>
@@ -888,19 +892,19 @@
                   <p>
                     <span class="how-name">dorota lech</span>
                   </p>
-                  <p>
-                    <img src="img/how-phone-red.svg" alt="phone icon" />&nbsp;
-                    <span class="how-number">607 667 757</span>
-                  </p>
+                  <a href="tel:+48607667757" class="tel">
+                    <img src="img/how-phone-red.svg" alt="phone icon" />
+                    <b>607 667 757</b>
+                  </a>
                 </div>
                 <div class="how-content__items__item-contact__text--miroslaw">
                   <p>
                     <span class="how-name">mirosław kantor</span>
                   </p>
-                  <p>
-                    <img src="img/how-phone-blue.svg" alt="phone icon" />&nbsp;
-                    <span class="how-number">530 150 042</span>
-                  </p>
+                  <a href="tel:+48530150042" class="tel">
+                    <img src="img/how-phone-blue.svg" alt="phone icon" />
+                    <b>530 150 042</b>
+                  </a>
                 </div>
               </div>
               <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
@@ -1061,10 +1065,15 @@
               </h2>
               <div class="footer-content__items__item--wrap__address-text">
                 <img src="../img/pin.svg" alt="Pin img" />
-                <p>
-                  ul. Bolesława Prusa 6 lok.28 (budynek Lokum Vena) <br />50-319
-                  Wrocław
-                </p>
+                <a
+                  href="https://maps.app.goo.gl/nCQQSUewcidcn5g57"
+                  target="_blank"
+                >
+                  <p>
+                    ul. Bolesława Prusa 6 lok.28 (budynek Lokum Vena)
+                    <br />50-319 Wrocław
+                  </p></a
+                >
               </div>
             </div>
             <a href="/rodo.html" id="rodo-link">RODO i polityka prywatności</a>

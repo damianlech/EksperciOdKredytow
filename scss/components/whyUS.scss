@@ -60,9 +60,6 @@
 @include rwd(m) {
   .whyUs {
     &__content {
-      padding-top: 80px;
-      padding-bottom: 80px;
-
       &__title {
         padding-bottom: 60px;
         h2 {
@@ -111,6 +108,8 @@
 @include rwd(xxl) {
   .whyUs {
     &__content {
+      padding-top: 80px;
+      padding-bottom: 80px;
       &__title {
         h2 {
           font-size: 56px;

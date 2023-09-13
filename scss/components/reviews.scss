@@ -129,8 +129,6 @@
 @include rwd(m) {
   .reviews {
     &__content {
-      padding-top: 80px;
-      padding-bottom: 80px;
       gap: 60px;
       &__title {
         h2 {
@@ -171,6 +169,17 @@
   }
 }
 
+@include rwd(l) {
+  h3 {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 123.077% */
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+  }
+}
+
 @include rwd(xl) {
   .reviews {
     &__content {
@@ -186,6 +195,8 @@
 @include rwd(xxl) {
   .reviews {
     &__content {
+      padding-top: 80px;
+      padding-bottom: 80px;
       &__title {
         h2 {
           font-size: 56px;
@@ -209,6 +220,15 @@
       &__items {
         &__item {
           max-width: 400px;
+          p {
+            text-align: center;
+            font-family: Lato;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 34px; /* 170% */
+            letter-spacing: 0.4px;
+          }
         }
       }
     }
