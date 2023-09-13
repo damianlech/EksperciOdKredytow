@@ -280,7 +280,8 @@ a {
     background: #003a5d; }
 
 .offer {
-  scroll-margin-top: 72px; }
+  scroll-margin-top: 72px;
+  overflow-x: hidden; }
   .offer h3 {
     padding-bottom: 20px;
     font-size: 24px;
