@@ -1904,7 +1904,7 @@ header {
     .form-content form {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
       width: 100%; }
     .form-content__title h2 {
       color: #03466e;
@@ -1940,8 +1940,7 @@ header {
       .form-content__fields-wrap {
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        justify-content: space-between; }
+        gap: 10px; }
       .form-content__fields__field {
         display: flex;
         flex-direction: column;
@@ -1949,7 +1948,7 @@ header {
         .form-content__fields__field input {
           height: 55px; }
         .form-content__fields__field textarea {
-          height: 295px; }
+          height: 245px; }
         .form-content__fields__field input,
         .form-content__fields__field textarea {
           display: flex;

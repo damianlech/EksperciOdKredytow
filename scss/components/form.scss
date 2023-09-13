@@ -21,7 +21,7 @@
     form {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
       width: 100%;
     }
     &__title {
@@ -63,8 +63,7 @@
       &-wrap {
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        justify-content: space-between;
+        gap: 10px;
       }
       &__field {
         display: flex;
@@ -74,7 +73,7 @@
           height: 55px;
         }
         textarea {
-          height: 295px;
+          height: 245px;
         }
         input,
         textarea {
