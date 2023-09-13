@@ -1115,7 +1115,8 @@ a {
           justify-content: center;
           padding-bottom: 8px;
           min-width: 330px;
-          width: 100%; }
+          width: 100%;
+          padding: 30px 0; }
           .how-content__items__item-contact a {
             text-decoration: none; }
           .how-content__items__item-contact__text {
@@ -1190,8 +1191,7 @@ a {
       background-position: 60% 0;
       flex-basis: 100%;
       max-width: 570px;
-      height: 100%;
-      padding: 30px; }
+      height: 100%; }
       .how-content__items__item-contact__text {
         flex-direction: row; } }
 
