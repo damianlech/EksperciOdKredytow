@@ -44,7 +44,7 @@
   }
 }
 
-@include rwd(l) {
+@include rwd(xl) {
   .carousel {
     margin: 40px auto;
     &__content {

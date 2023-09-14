@@ -1,12 +1,15 @@
 .side {
   position: fixed;
   right: 0;
-  top: 80px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
   text-decoration: none;
-  z-index: 1000;
+  z-index: 900;
+  br {
+    display: none;
+  }
 
   &__buttons {
     &-form {
@@ -25,7 +28,7 @@
       border-radius: 3px;
     }
     &-voucherBtn {
-      width: 100px;
+      width: 100vw;
       background-color: $color-secondary-2;
       color: white;
       font-family: Mukta;
@@ -43,13 +46,13 @@
   }
   &__voucher {
     margin-top: 160px;
-    max-height: 60vh;
     max-width: 690px;
     flex-shrink: 0;
     border-radius: 3px;
     border: none;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(4px);
+    margin: auto 1em;
     p {
       font-weight: 400;
     }
@@ -109,7 +112,7 @@
       }
     }
     &__asterisk {
-      padding: 50px 0;
+      padding: 20px 0;
     }
     &__bottom {
       display: flex;
@@ -127,9 +130,19 @@
     }
   }
 }
+@include rwd(m) {
+  .side {
+    &__voucher {
+      margin: auto;
+    }
+  }
+}
 
 @include rwd(l) {
   .side {
+    br {
+      display: block;
+    }
     top: 100px;
     &__buttons {
       &-voucherBtn {

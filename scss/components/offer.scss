@@ -56,12 +56,13 @@
     }
     &__items {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       justify-content: space-around;
       gap: 10px;
       &__item {
         border-radius: 3px;
-        width: 330px;
+        min-height: 430px;
+        max-width: 330px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -237,11 +238,26 @@
   .offer {
     &-content {
       &__items {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         padding: 0 15px;
-
+        counter-reset: grid;
         width: 100vw;
+
+        &__item {
+          grid-column: span 2;
+          &::after {
+            counter-increment: grid;
+            content: counter(grid);
+          }
+          &:last-child:nth-child(3n - 1) {
+            grid-column-end: -2;
+          }
+
+          &:nth-last-child(2):nth-child(3n + 1) {
+            grid-column-end: 4;
+          }
+        }
       }
     }
     &-popup {
@@ -262,7 +278,7 @@
   }
 }
 
-@include rwd(l) {
+@include rwd(xl) {
   .offer {
     &-content {
       &__title {
@@ -288,8 +304,10 @@
         }
       }
       &__items {
+        display: flex;
         flex-wrap: nowrap;
         &__item {
+          width: 330px;
           p {
             color: #fff;
             opacity: 0;
