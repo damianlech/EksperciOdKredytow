@@ -2,7 +2,7 @@
   background: $color-background;
   transition: opacity 500ms;
   overflow: scroll;
-  padding-top: 108px;
+  padding-top: 72px;
   overflow: hidden;
   &-wrap {
     display: flex;
@@ -75,7 +75,7 @@
           height: 55px;
         }
         textarea {
-          height: 230px;
+          height: 100px;
         }
         input,
         textarea {
@@ -92,7 +92,7 @@
     &-buttons {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 10px;
       &__checkbox {
         display: flex;
         flex-direction: column;
@@ -175,6 +175,7 @@
 
 @include rwd(l) {
   .form {
+    padding-top: 108px;
     &-content {
       &__title {
         h2::after {
@@ -206,10 +207,14 @@
       }
       &__fields {
         flex-direction: row;
+        textarea {
+          height: 230px;
+        }
       }
       &-buttons {
         flex-direction: row;
         justify-content: space-between;
+        gap: 30px;
         &__checkbox {
           flex-basis: 55%;
           label {

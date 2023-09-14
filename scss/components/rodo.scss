@@ -1,6 +1,6 @@
 .rodo {
   background: $color-background;
-  padding-top: 108px;
+  padding-top: 72px;
   &-content {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -86,6 +86,7 @@
 
 @include rwd(l) {
   .rodo {
+    padding-top: 108px;
     &-content {
       &__title {
         &-main {
