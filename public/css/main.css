@@ -1821,11 +1821,11 @@ header {
       text-transform: uppercase;
       align-self: center; }
     .footer-content .copyright {
-      text-align: center; }
+      text-align: center;
+      font-size: 12px; }
 
 @media only screen and (min-width: 768px) {
   .footer h2,
-  .footer p,
   .footer a {
     font-size: 18px;
     font-style: normal;

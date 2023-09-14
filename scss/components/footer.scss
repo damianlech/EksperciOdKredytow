@@ -145,6 +145,7 @@
     }
     .copyright {
       text-align: center;
+      font-size: 12px;
     }
   }
 }
@@ -152,7 +153,6 @@
 @include rwd(m) {
   .footer {
     h2,
-    p,
     a {
       font-size: 18px;
       font-style: normal;
