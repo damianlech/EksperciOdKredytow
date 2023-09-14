@@ -2310,7 +2310,7 @@ header {
       cursor: pointer; }
     .side__voucher__title {
       color: #ab1d22;
-      padding-bottom: 25px; }
+      padding-bottom: 15px; }
       .side__voucher__title span {
         color: #03466e; }
       .side__voucher__title p {
@@ -2318,7 +2318,7 @@ header {
     .side__voucher__content {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
       text-transform: uppercase;
       text-align: center; }
       .side__voucher__content span {
@@ -2338,15 +2338,27 @@ header {
             line-height: 22px;
             /* 137.5% */
             letter-spacing: 0.32px;
-            padding: 10px 10px; }
+            padding: 5px; }
     .side__voucher__asterisk {
       padding: 20px 0; }
+      .side__voucher__asterisk p {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 15px;
+        /* 137.5% */
+        letter-spacing: 0.25px; }
     .side__voucher__bottom {
       display: flex;
       flex-direction: column;
       gap: 20px;
       text-align: center; }
       .side__voucher__bottom-reminder b {
+        font-size: 15px;
+        font-style: normal;
+        line-height: 15px;
+        /* 137.5% */
+        letter-spacing: 0.25px;
         font-weight: 600; }
       .side__voucher__bottom-reminder span {
         color: #e9262d; }
@@ -2368,7 +2380,9 @@ header {
     .side__voucher {
       max-height: none;
       margin-top: 20px;
-      margin-right: calc((100vw - 960px) / 2); } }
+      margin-right: calc((100vw - 960px) / 2); }
+      .side__voucher__content__items__item p {
+        padding: 10px 10px; } }
 
 @media only screen and (min-width: 1200px) {
   .side__voucher {
