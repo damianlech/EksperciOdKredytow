@@ -17,7 +17,6 @@
 }
 
 .carousel {
-  height: 170px;
   display: flex;
   align-items: center;
   &__content {
@@ -50,7 +49,6 @@
     margin: 40px auto;
     &__content {
       &__track {
-        height: 165px;
         width: calc(330px * 22);
         animation: scroll-large 20s linear infinite;
         &-item {

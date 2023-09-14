@@ -56,7 +56,6 @@
     &::backdrop {
       background: rgba(0, 0, 0, 0.7);
       transition: opacity 500ms;
-      overflow: scroll;
     }
     .close {
       position: absolute;
@@ -104,7 +103,7 @@
             line-height: 22px; /* 137.5% */
             letter-spacing: 0.32px;
 
-            padding: 5px 5px;
+            padding: 10px 10px;
           }
         }
       }
@@ -148,6 +147,8 @@
 @include rwd(xl) {
   .side {
     &__voucher {
+      padding: 30px;
+      margin-top: 40px;
       margin-right: calc((100vw - 1140px) / 2);
     }
   }
@@ -156,13 +157,9 @@
 @include rwd(xxl) {
   .side {
     &__voucher {
+      margin-top: 80px;
       margin-right: calc((100vw - 1320px) / 2);
     }
-  }
-}
-
-@include rwd(xxl) {
-  .side {
     top: 160px;
     &__buttons {
       &-form {

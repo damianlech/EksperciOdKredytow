@@ -1,6 +1,7 @@
 .offer {
-  scroll-margin-top: 72px;
-  overflow-x: hidden;
+  scroll-margin-top: 100px;
+  overflow-x: clip;
+
   h3 {
     padding-bottom: 20px;
     font-size: 24px;
@@ -263,8 +264,6 @@
 
 @include rwd(l) {
   .offer {
-    scroll-margin-top: 149px;
-
     &-content {
       &__title {
         &-main {
@@ -353,6 +352,7 @@
 
 @include rwd(xxl) {
   .offer {
+    scroll-margin-top: 149px;
     h3 {
       font-size: 34px;
       font-style: normal;
@@ -388,6 +388,9 @@
       &__items {
         padding: 0 35px;
         &__item {
+          &__text {
+            margin: 30px;
+          }
           p {
             transform: translateY(15px);
             transition: 0.3s ease-out;

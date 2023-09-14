@@ -1,5 +1,5 @@
 .how {
-  scroll-margin-top: 72px;
+  scroll-margin-top: 100px;
   background-color: $color-background;
   padding: 40px 0;
   &-content {
@@ -176,7 +176,6 @@
 
 @include rwd(l) {
   .how {
-    scroll-margin-top: 149px;
     &-content {
       &__title {
         &-main {
@@ -220,6 +219,7 @@
 
 @include rwd(xxl) {
   .how {
+    scroll-margin-top: 149px;
     padding: 80px 0;
     &-content {
       &__title {
@@ -259,7 +259,8 @@
                 line-height: 25px;
                 letter-spacing: 0.36px;
               }
-              p {
+              p,
+              a {
                 font-size: 18px;
                 line-height: 25px;
                 letter-spacing: 0.36px;

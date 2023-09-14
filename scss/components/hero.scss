@@ -173,20 +173,23 @@
 
 @include rwd(xxl) {
   .hero {
-    height: 807px;
+    margin-top: 149px;
     &-background {
       &__item {
         background-position: 85% 0;
       }
     }
     &-content {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      gap: 80px;
       &__text {
         &-title {
+          padding-bottom: 80px;
           h1 {
             font-size: 70px;
             font-style: normal;
             font-weight: 800;
-            line-height: normal;
             text-transform: uppercase;
           }
         }
