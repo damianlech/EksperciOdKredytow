@@ -62,6 +62,9 @@ function smoothScroll() {
         document
           .querySelector(href)
           .scrollIntoView({ top: 149, behavior: "smooth" });
+        if (showMenu === true) {
+          toggleMenu();
+        }
       }
     });
   });

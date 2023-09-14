@@ -57,7 +57,7 @@
     &__items {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       gap: 10px;
       &__item {
         border-radius: 3px;
@@ -96,7 +96,7 @@
           background-image: url("../img/offer-dark-5.jpg");
         }
         &__text {
-          margin: 15px;
+          margin: 30px;
           margin-bottom: 0;
           color: #fff;
           font-family: Mukta;
@@ -132,6 +132,7 @@
     &__item {
       background: white;
       display: flex;
+      overflow-y: hidden;
       &-image {
         display: none;
         min-width: 10%;
@@ -151,10 +152,7 @@
         gap: 30px;
         justify-content: space-between;
         &__text {
-          padding: 0 30px;
-          h3 {
-            width: 50%;
-          }
+          padding: 0 20px;
           b {
             font-weight: 700;
           }
@@ -205,8 +203,8 @@
           }
           .close {
             position: absolute;
-            top: 20px;
-            right: 30px;
+            top: 0;
+            right: 5px;
             transition: all 200ms;
             font-size: 30px;
             font-weight: bold;

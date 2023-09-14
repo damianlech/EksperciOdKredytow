@@ -5,7 +5,6 @@
   &-content {
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
     align-items: center;
 
     &__title {
@@ -65,7 +64,7 @@
         }
         h3 {
           color: $color-secondary-1;
-          font-size: 26px;
+          font-size: 20px;
         }
         &:nth-child(even) {
           h3 {

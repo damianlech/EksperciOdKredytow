@@ -125,6 +125,11 @@ header {
       margin: auto;
       width: 212px;
       z-index: 100;
+      & > * {
+        & > * {
+          padding: 0;
+        }
+      }
     }
   }
 }
