@@ -1813,7 +1813,7 @@ header {
       font-family: Mukta;
       font-size: 18px;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 25px;
       /* 138.889% */
       letter-spacing: 0.36px;
@@ -1829,7 +1829,6 @@ header {
   .footer a {
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
     line-height: 25px;
     /* 138.889% */
     letter-spacing: 0.36px; }
