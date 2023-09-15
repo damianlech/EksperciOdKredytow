@@ -344,6 +344,7 @@ a {
       justify-content: center;
       gap: 10px; }
       .offer-content__items__item {
+        display: flex;
         border-radius: 3px;
         min-height: 430px;
         max-width: 330px;
@@ -490,9 +491,6 @@ a {
     width: 100vw; }
     .offer-content__items__item {
       grid-column: span 2; }
-      .offer-content__items__item::after {
-        counter-increment: grid;
-        content: counter(grid); }
       .offer-content__items__item:last-child:nth-child(3n - 1) {
         grid-column-end: -2; }
       .offer-content__items__item:nth-last-child(2):nth-child(3n + 1) {

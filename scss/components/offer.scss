@@ -60,6 +60,7 @@
       justify-content: center;
       gap: 10px;
       &__item {
+        display: flex;
         border-radius: 3px;
         min-height: 430px;
         max-width: 330px;
@@ -244,10 +245,6 @@
 
         &__item {
           grid-column: span 2;
-          &::after {
-            counter-increment: grid;
-            content: counter(grid);
-          }
           &:last-child:nth-child(3n - 1) {
             grid-column-end: -2;
           }
