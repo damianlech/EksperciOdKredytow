@@ -48,10 +48,13 @@ header {
       align-items: center;
       display: flex;
     }
-    .tel:hover {
+    .tel b {
       color: #fff;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid transparent;
       transition: 0.3s ease-out;
+    }
+    .tel b:hover {
+      border-color: #fff;
     }
     b {
       font-weight: 700;
@@ -109,8 +112,10 @@ header {
   padding: 0 15px;
   &-logo {
     transition: 1s;
+
     &__img {
       height: 65px;
+      padding: 10px 0;
     }
     &.open {
       position: absolute;
@@ -120,6 +125,11 @@ header {
       margin: auto;
       width: 212px;
       z-index: 100;
+      & > * {
+        & > * {
+          padding: 0;
+        }
+      }
     }
   }
 }
@@ -224,16 +234,17 @@ header {
       font-weight: 300;
       transition: 0.5s;
       padding: 10px 0;
+      border-bottom: 3px solid transparent;
       &:hover {
         color: $color-secondary-2;
-        border-bottom: 3px solid $color-secondary-2;
+        border-color: $color-secondary-2;
         transition: 0.1s ease-out;
         padding-bottom: 7px;
       }
     }
     .active {
       color: $color-secondary-2;
-      border-bottom: 3px solid $color-secondary-2;
+      border-color: $color-secondary-2;
       padding-bottom: 7px;
     }
   }
@@ -246,16 +257,6 @@ header {
 }
 
 @include rwd(l) {
-  .header {
-    height: 113px;
-    padding: 0;
-    &-logo {
-      &__img {
-        height: 80px;
-      }
-    }
-  }
-
   .infobar {
     display: flex;
     img {
@@ -299,7 +300,16 @@ header {
   }
 }
 
-@include rwd(xl) {
+@include rwd(xxl) {
+  .header {
+    height: 113px;
+    padding: 0;
+    &-logo {
+      &__img {
+        height: 80px;
+      }
+    }
+  }
   .nav {
     .menu-nav {
       &__item {

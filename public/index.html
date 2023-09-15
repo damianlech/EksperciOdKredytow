@@ -10,6 +10,12 @@
       name="description"
       content="Zastanawiasz się nad kredytem? Skorzystaj z pomocy eksperta! Umów się na bezpłatną konsultację a pomożemy ci w znalezieniu onajlepszej oferty."
     />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="google-site-verification"
+      content="Hi52BPPiZVAYMkKVeEAjx0VE82EiUkomwcDXF62C5cE"
+    />
+    <link rel="canonical" href="https://www.eksperciodkredytow.pl" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +27,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="”shortcut" icon”="" href="“favicon.ico”" />
   </head>
   <body>
     <header id="header">
@@ -31,13 +38,13 @@
               <b>Masz pytanie?</b>&nbsp; Skontaktuj się z nami!
             </p>
 
-            <a href="tel:607667757" class="tel">
+            <a href="tel:+48607667757" class="tel">
               <img src="img/phone.svg" alt="phone icon" />
               &nbsp;
               <b>607 667 757</b>
             </a>
 
-            <a href="tel:530150042" class="tel">
+            <a href="tel:+48530150042" class="tel">
               <img src="img/phone.svg" alt="phone icon" />
               &nbsp;
               <b>530 150 042</b>
@@ -46,7 +53,10 @@
           <div class="infobar__content-social">
             <p class="infoParagraph">Znajdź nas w mediach społecznościowych!</p>
             <p id="line" class="infoParagraph"></p>
-            <a href="#">
+            <a
+              href="https://www.facebook.com/EksperciOdKredytow"
+              target="_blank"
+            >
               <img src="img/facebook.svg" alt="facebook icon" />
             </a>
           </div>
@@ -54,12 +64,13 @@
       </div>
       <div class="header container">
         <div class="header-logo">
-          <img
-            title="Eksperci od kredytów Logo"
-            src="./img/logo.svg"
-            alt="Eksperci od kredytów Logo"
-            class="header-logo__img"
-          />
+          <a href="https://www.eksperciodkredytow.pl">
+            <img
+              title="Eksperci od kredytów Logo"
+              src="./img/logo.svg"
+              alt="Eksperci od kredytów Logo"
+              class="header-logo__img"
+          /></a>
         </div>
         <div class="menu-btn">
           <span class="menu-btn__burger"></span>
@@ -68,28 +79,28 @@
         <nav class="nav">
           <ul class="menu-nav">
             <li class="menu-nav__item">
-              <a href="#hero" class="menu-nav__link active">
+              <a href="#hero" class="menu-nav__link link active">
                 <img src="img/home.svg" alt="home icon" />&nbsp; Home
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#about" class="menu-nav__link">
+              <a href="#about" class="menu-nav__link link">
                 <img src="img/about.svg" alt="about icon" />&nbsp; O nas
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#offer" class="menu-nav__link">
+              <a href="#offer" class="menu-nav__link link">
                 <img src="img/services.svg" alt="services icon" />&nbsp; Nasze
                 usługi
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#how" class="menu-nav__link">
+              <a href="#how" class="menu-nav__link link">
                 <img src="img/work.svg" alt="work icon" />&nbsp; Jak działamy?
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="/form.html" class="menu-nav__link">
                 <img src="img/phone2.svg" alt="phone2 icon" />&nbsp; Kontakt
               </a>
             </li>
@@ -98,7 +109,72 @@
       </div>
     </header>
 
+    <div class="side">
+      <div class="side__buttons"></div>
+      <a class="side__buttons-form" href="/form.html">Napisz do nas</a>
+      <button class="side__buttons-voucherBtn" id="voucherBtn">
+        Odbierz voucher<br />
+        targowy!
+      </button>
+      <dialog class="side__voucher" id="voucher">
+        <div id="side__voucher-wrapper">
+          <form method="dialog">
+            <button class="close" id="close">&times;</button>
+          </form>
+          <div class="side__voucher__title">
+            <h2 class="side__voucher__title-main">
+              <span>Odbierz</span> Voucher Targowy*
+            </h2>
+            <p>na wybrane usługi</p>
+          </div>
+          <div class="side__voucher__content">
+            <p>
+              Voucher dostępny tylko w dniach targowych:
+              <span>16-17.09.2023</span>
+            </p>
+            <div class="side__voucher__content__items">
+              <div class="side__voucher__content__items__item">
+                <p>Wycena Nieruchomości</p>
+              </div>
+              <div class="side__voucher__content__items__item">
+                <p>Analiza prawna umowy deweloperskiej</p>
+              </div>
+              <div class="side__voucher__content__items__item">
+                <p>odbiór techniczny nieruchomości w stanie deweloperskim</p>
+              </div>
+            </div>
+          </div>
+          <div class="side__voucher__asterisk">
+            <p>
+              * Dla Klientów, którzy w dniach targowych zgłoszą przez niniejszy
+              formularz kontaktowy chęć skorzystania z bezpłatnej konsultacji
+              on-line lub w biurze oraz w ciągu 6 miesięcy skorzystają z pomocy
+              naszych ekspertów, i którym za naszym pośrednictwem zostanie
+              udzielony kredyt hipoteczny
+            </p>
+          </div>
+          <div class="side__voucher__bottom">
+            <p class="side__voucher__bottom-reminder">
+              <b
+                >Przypominamy, że nasza obsługa procesu kredytowego jest
+                <span>w pełni bezpłatna!</span></b
+              >
+            </p>
+            <a href="/form.html" class="side__voucher__bottom-button btn-main"
+              >Przejdź dalej</a
+            >
+          </div>
+        </div>
+      </dialog>
+    </div>
+
     <section class="hero" id="hero">
+      <div class="hero-background">
+        <div class="hero-background__item" id="slider-1"></div>
+        <div class="hero-background__item" id="slider-2"></div>
+        <div class="hero-background__item" id="slider-3"></div>
+        <div class="hero-background__item" id="slider-4"></div>
+      </div>
       <div class="hero-content container">
         <div class="hero-content__text">
           <div class="hero-content__text-title">
@@ -118,7 +194,7 @@
           </div>
         </div>
         <div class="hero-content__buttons">
-          <a class="btn-main link" href="#">Skontaktuj się z nami</a>
+          <a class="btn-main" href="/form.html">Skontaktuj się z nami</a>
           <a class="btn-add link" href="#about">Dowiedz się więcej</a>
         </div>
         <div class="hero-content__more">
@@ -274,7 +350,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn-main link">Skontaktuj się z nami</a>
+        <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
       </div>
     </section>
 
@@ -461,11 +537,9 @@
       </div>
       <dialog class="offer-popup container" id="popup-1">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-1.jpg"
-            alt="offer-over-1 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-1.jpg" alt="offer-over-1 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Kredyty hipoteczne</h3>
@@ -499,17 +573,15 @@
                 możesz uzyskać podczas bezpłatnej konsultacji
               </p>
             </div>
-            <a href="#" class="btn-main">Skontaktuj się z nami</a>
+            <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
           </div>
         </div>
       </dialog>
       <dialog class="offer-popup container" id="popup-2">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-2.jpg"
-            alt="offer-over-2 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-2.jpg" alt="offer-over-2 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Kredyty gotówkowe</h3>
@@ -530,17 +602,15 @@
                 tytułu rat kredytowych.
               </p>
             </div>
-            <a href="#" class="btn-main">Skontaktuj się z nami</a>
+            <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
           </div>
         </div>
       </dialog>
       <dialog class="offer-popup container" id="popup-3">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-3.jpg"
-            alt="offer-over-3 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-3.jpg" alt="offer-over-3 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Kredyty firmowe</h3>
@@ -560,17 +630,15 @@
                 i na rozwój nowo powstających przedsiębiorstw.
               </p>
             </div>
-            <a href="#" class="btn-main">Skontaktuj się z nami</a>
+            <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
           </div>
         </div>
       </dialog>
       <dialog class="offer-popup container" id="popup-4">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-4.jpg"
-            alt="offer-over-4 image"
-          />
+          <div class="offer-popup__item-image">
+            <img src="img/offer-over-4.jpg" alt="offer-over-4 image" />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>Ubezpieczenia</h3>
@@ -762,17 +830,19 @@
                 </ul>
               </div>
             </div>
-            <a href="#" class="btn-main">Skontaktuj się z nami</a>
+            <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
           </div>
         </div>
       </dialog>
       <dialog class="offer-popup container" id="popup-5">
         <div class="offer-popup__item">
-          <img
-            class="offer-popup__item-image"
-            src="img/offer-over-5.jpg"
-            alt="offer-over-5 image"
-          />
+          <div class="offer-popup__item-image">
+            <img
+              class="offer-popup__item"
+              src="img/offer-over-5.jpg"
+              alt="offer-over-5 image"
+            />
+          </div>
           <div class="offer-popup__item-content">
             <div class="offer-popup__item-content__text">
               <h3>pozostałe usługi</h3>
@@ -796,7 +866,7 @@
                 być pomocni.
               </p>
             </div>
-            <a href="#" class="btn-main">Skontaktuj się z nami</a>
+            <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
           </div>
         </div>
       </dialog>
@@ -819,7 +889,7 @@
               <h3><span>Krok 1</span><br />Skontaktuj się z nami</h3>
               <p id="h-line"></p>
               <p>
-                Napisz do nas lub zadzwon, umówimy się na bezpłatną konsultację
+                Napisz do nas lub zadzwoń, umówimy się na bezpłatną konsultację
                 w dogodnym dla Ciebie terminie i formie (spotkanie w biurze,
                 on-line, rozmowa telefoniczna).
               </p>
@@ -830,22 +900,22 @@
                   <p>
                     <span class="how-name">dorota lech</span>
                   </p>
-                  <p>
-                    <img src="img/how-phone-red.svg" alt="phone icon" />&nbsp;
-                    <span class="how-number">607 667 757</span>
-                  </p>
+                  <a href="tel:+48607667757" class="tel">
+                    <img src="img/how-phone-red.svg" alt="phone icon" />
+                    <b>607 667 757</b>
+                  </a>
                 </div>
                 <div class="how-content__items__item-contact__text--miroslaw">
                   <p>
                     <span class="how-name">mirosław kantor</span>
                   </p>
-                  <p>
-                    <img src="img/how-phone-blue.svg" alt="phone icon" />&nbsp;
-                    <span class="how-number">530 150 042</span>
-                  </p>
+                  <a href="tel:+48530150042" class="tel">
+                    <img src="img/how-phone-blue.svg" alt="phone icon" />
+                    <b>530 150 042</b>
+                  </a>
                 </div>
               </div>
-              <a href="#" class="btn-main">Skontaktuj się z nami</a>
+              <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
             </div>
           </div>
           <div class="how-content__items__item">
@@ -913,7 +983,7 @@
         <div class="reviews__content__items">
           <div class="reviews__content__items__item">
             <div class="reviews__content__items__item-title">
-              <h3>Mariusz H.</h3>
+              <h3>Karolina Pankiewicz</h3>
               <div class="reviews__content__items__item-title__stars">
                 <img src="../img/star-icon.svg" alt="star icon" />
                 <img src="../img/star-icon.svg" alt="star icon" />
@@ -924,14 +994,15 @@
             </div>
             <p id="h-line"></p>
             <p>
-              Szczerze polecam Panią Dorotę Lech. Profesjonalizm, świetnie
-              podejście do klienta, wyczerpujące odpowiedzi na każde pytanie,
-              dogodne formy kontaktu.
+              Dzięki Panu Mirosławowi oraz Pani Dorocie zdobycie kredytu okazało
+              się dosć proste. Pełen profesjonalizm, ogromna wiedza, bardzo
+              realne podejście i sprawdzanie wszelkich opcji. Faktycznie dbają o
+              ludzi, a nie tylko obsługują kolejnego klienta!
             </p>
           </div>
           <div class="reviews__content__items__item">
             <div class="reviews__content__items__item-title">
-              <h3>Karolina p.</h3>
+              <h3>Jacek Rostecki</h3>
               <div class="reviews__content__items__item-title__stars">
                 <img src="../img/star-icon.svg" alt="star icon" />
                 <img src="../img/star-icon.svg" alt="star icon" />
@@ -942,15 +1013,13 @@
             </div>
             <p id="h-line"></p>
             <p>
-              “Dzięki Panu Mirosławowi oraz Pani Dorocie zdobycie kredytu
-              okazało się dosć proste. Pełen profesjonalizm, ogromna wiedza,
-              bardzo realne podejście i sprawdzanie wszelkich opcji. Faktycznie
-              dbają o ludzi, a nie tylko obsługują kolejnego klienta!”
+              POLECAM Pania Dorote Lech osoba zaangazowana i profesjonalna w
+              100% w swoja prace BARDZO DZIEKUJE
             </p>
           </div>
           <div class="reviews__content__items__item">
             <div class="reviews__content__items__item-title">
-              <h3>kuba l.</h3>
+              <h3>Kuba L</h3>
               <div class="reviews__content__items__item-title__stars">
                 <img src="../img/star-icon.svg" alt="star icon" />
                 <img src="../img/star-icon.svg" alt="star icon" />
@@ -968,7 +1037,7 @@
           </div>
         </div>
         <div class="reviews__content__buttons">
-          <a href="#" class="btn-main">Skontaktuj się z nami</a>
+          <a href="/form.html" class="btn-main">Skontaktuj się z nami</a>
           <button id="pop-reviews-popup" class="btn-add">Więcej opinii</button>
         </div>
       </div>
@@ -985,10 +1054,95 @@
             <img src="../img/reviews/review5.jpg" alt="review5" />
             <img src="../img/reviews/review6.jpg" alt="review6" />
             <img src="../img/reviews/review7.jpg" alt="review7" />
+            <img src="../img/reviews/review8.jpg" alt="review8" />
+            <img src="../img/reviews/review9.jpg" alt="review9" />
+            <img src="../img/reviews/review10.jpg" alt="review10" />
+            <img src="../img/reviews/review11.jpg" alt="review11" />
+            <img src="../img/reviews/review12.jpg" alt="review12" />
+            <img src="../img/reviews/review13.jpg" alt="review13" />
+            <img src="../img/reviews/review14.jpg" alt="review14" />
+            <img src="../img/reviews/review15.jpg" alt="review15" />
+            <img src="../img/reviews/review16.jpg" alt="review16" />
+            <img src="../img/reviews/review17.jpg" alt="review17" />
           </div>
         </div>
       </dialog>
     </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer-content container">
+        <div class="footer-content__items">
+          <div class="footer-content__items__item--wrap">
+            <div class="footer-content__items__item--wrap__logo">
+              <img src="../img/logo-white.svg" alt="Logo white" />
+            </div>
+            <div class="footer-content__items__item--wrap__address">
+              <h2 class="footer-content__items__item--wrap__address-title">
+                Eksperci od kredytów
+              </h2>
+              <div class="footer-content__items__item--wrap__address-text">
+                <img src="../img/pin.svg" alt="Pin img" />
+                <a
+                  href="https://maps.app.goo.gl/nCQQSUewcidcn5g57"
+                  target="_blank"
+                >
+                  <p>
+                    ul. Bolesława Prusa 6 lok.28 (budynek Lokum Vena)
+                    <br />50-319 Wrocław
+                  </p></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer-content__items__item--contact">
+            <div class="footer-content__items__item--contact-subItem">
+              <img src="../img/frame-miroslaw.png" alt="Frame Miroslaw" />
+              <div class="footer-content__items__item--contact-subItem__info">
+                <h3
+                  class="footer-content__items__item--contact-subItem__info--miroslaw"
+                >
+                  Mirosław Kantor
+                </h3>
+                <a href="tel:+48530150042" class="tel">
+                  <img src="img/how-phone-blue.svg" alt="phone icon" />
+                  <b>530 150 042</b>
+                </a>
+                <a
+                  href="mailto:miroslaw.kantor@eksperciodkredytow.pl"
+                  class="mail"
+                >
+                  <img src="img/mail-blue.svg" alt="phone icon" />
+                  <b>miroslaw.kantor<br />@eksperciodkredytow.pl</b>
+                </a>
+              </div>
+            </div>
+            <div class="footer-content__items__item--contact-subItem">
+              <img src="../img/Frame65.png" alt="Frame Dorota" />
+              <div class="footer-content__items__item--contact-subItem__info">
+                <h3
+                  class="footer-content__items__item--contact-subItem__info--dorota"
+                >
+                  Dorota Lech
+                </h3>
+                <a href="tel:+48607667757" class="tel">
+                  <img src="img/how-phone-red.svg" alt="phone icon" />
+                  <b>607 667 757</b>
+                </a>
+                <a href="mailto:dorota.lech@eksperciodkredytow.pl" class="mail">
+                  <img src="img/mail-red.svg" alt="phone icon" />
+                  <b>dorota.lech<br />@eksperciodkredytow.pl</b>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="/rodo.html" id="rodo-link">RODO i polityka prywatności</a>
+        <p class="copyright">
+          Copyright © Eksperciodkredytow.pl - Projekt graficzny: Studio
+          Projektowe Bonsai Design
+        </p>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -17,7 +17,6 @@
 }
 
 .carousel {
-  height: 170px;
   display: flex;
   align-items: center;
   &__content {
@@ -37,18 +36,19 @@
         flex-direction: column;
         justify-content: center;
         width: 165px;
+        img {
+          max-height: 120px;
+        }
       }
     }
   }
 }
 
-@include rwd(l) {
+@include rwd(xl) {
   .carousel {
-    height: 325px;
+    margin: 40px auto;
     &__content {
-      margin: 80px auto;
       &__track {
-        height: 165px;
         width: calc(330px * 22);
         animation: scroll-large 20s linear infinite;
         &-item {
@@ -58,5 +58,11 @@
         }
       }
     }
+  }
+}
+
+@include rwd(xxl) {
+  .carousel {
+    margin: 80px auto;
   }
 }

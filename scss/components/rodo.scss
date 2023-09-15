@@ -1,17 +1,16 @@
-.about {
-  scroll-margin-top: 100px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.rodo {
+  background: $color-background;
+  padding-top: 72px;
   &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
     &__title {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       width: 100%;
+      padding-bottom: 40px;
       &-main {
         display: flex;
         align-items: center;
@@ -22,14 +21,13 @@
         }
 
         #h-line {
-          content: "s";
+          content: "";
           width: 100%;
           height: 1px;
           background: #d9d9d9;
           margin-left: 15px;
         }
       }
-
       &-sub {
         p {
           flex-basis: 100%;
@@ -45,38 +43,50 @@
         }
       }
     }
-    &__bios {
-      display: flex;
-      flex-direction: column;
-      padding: 30px 0;
-      gap: 40px;
-
-      &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-
-        & > * {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-        }
-        h3 {
-          color: $color-secondary-1;
+    &__text {
+      ol {
+        list-style-type: decimal;
+        list-style-position: inside;
+        li {
+          color: #000;
+          font-family: Mukta;
           font-size: 20px;
-        }
-        &:nth-child(even) {
-          h3 {
-            color: $color-primary-1;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          padding: 0 20px;
+          ol {
+            li {
+              color: #222;
+              font-family: Mukta;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 25px;
+              letter-spacing: 0.32px;
+              text-transform: none;
+              padding: 5px;
+              ul {
+                padding-left: 3rem;
+                list-style-type: lower-latin;
+              }
+              #dotted {
+                list-style-type: disc;
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
     }
   }
 }
+
 @include rwd(l) {
-  .about {
+  .rodo {
+    padding-top: 108px;
     &-content {
       &__title {
         &-main {
@@ -100,67 +110,19 @@
           }
         }
       }
-      &__bios {
-        width: 100%;
-        #dorota-bio-img {
-          content: url("../img/dorota-bio-2.jpg");
-        }
-        #miroslaw-bio-img {
-          content: url("../img/miroslaw-bio-2.jpg");
-        }
-        &__item {
-          justify-content: space-between;
-          flex-direction: row;
-          align-items: center;
-
-          img {
-            transform: scale(0.8);
-          }
-
-          &:nth-child(even) {
-            flex-direction: row-reverse;
-          }
-
-          p {
-            line-height: 25px;
-          }
-
-          b {
-            font-weight: 700;
-          }
-
-          &__text {
-            padding: 0 1rem;
-          }
-        }
-      }
     }
   }
 }
 
-@include rwd(xl) {
-  .about {
-    &-content {
-      &__bios {
-        &__item {
-          img {
-            transform: scale(0.9);
-          }
-          &__text {
-            padding: 0 5rem;
-          }
-        }
-      }
-    }
-  }
-}
 @include rwd(xxl) {
-  .about {
-    scroll-margin-top: 149px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .rodo {
+    padding-top: 149px;
     &-content {
+      padding-top: 80px;
+      padding-bottom: 80px;
+
       &__title {
+        padding-bottom: 100px;
         &-main {
           h2 {
             font-size: 56px;
@@ -182,13 +144,18 @@
           }
         }
       }
-      &__bios {
-        &__item {
-          img {
-            transform: none;
-          }
-          &__text {
-            padding: 0 8rem;
+      &__text {
+        ol {
+          li {
+            ol {
+              li {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 25px; /* 138.889% */
+                letter-spacing: 0.36px;
+              }
+            }
           }
         }
       }

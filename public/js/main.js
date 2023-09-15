@@ -14,10 +14,12 @@ const showInsuranceButton = document.querySelectorAll(
   ".offer-popup__item-content__text-nav__link"
 );
 
-let counter = 1;
-
 const reviewBtn = document.getElementById("pop-reviews-popup");
 const reviewsPopup = document.getElementById("reviews-popup");
+
+const voucherBtn = document.getElementById("voucherBtn");
+const voucher = document.getElementById("voucher");
+const voucherWrapper = document.getElementById("side__voucher-wrapper");
 
 let showMenu = false;
 
@@ -50,7 +52,7 @@ function toggleMenu() {
 }
 
 function smoothScroll() {
-  const link = document.querySelectorAll(".link, .menu-nav__link");
+  const link = document.querySelectorAll(".link");
 
   link.forEach((el) => {
     el.addEventListener("click", function (e) {
@@ -60,6 +62,9 @@ function smoothScroll() {
         document
           .querySelector(href)
           .scrollIntoView({ top: 149, behavior: "smooth" });
+        if (showMenu === true) {
+          toggleMenu();
+        }
       }
     });
   });
@@ -88,23 +93,12 @@ function showActive() {
   });
 }
 
-function slider() {
-  const images = [
-    "../img/slider-1.jpg",
-    "../img/slider-2.jpg",
-    "../img/slider-3.jpg",
-    "../img/slider-4.jpg",
-  ];
-
-  const hero = document.querySelector("#hero");
-
-  hero.style.backgroundImage = `url(${images[counter]})`;
-  counter === 3 ? (counter = 0) : counter++;
-}
-setInterval(slider, 10000);
 window.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
   showActive();
+  setTimeout(function () {
+    voucher.showModal();
+  }, 3000);
 });
 
 showButtonAll.forEach((el) =>
@@ -136,3 +130,31 @@ showInsuranceButton.forEach((el) =>
 reviewBtn.addEventListener("click", () => {
   reviewsPopup.showModal();
 });
+
+voucherBtn.addEventListener("click", () => {
+  voucher.showModal();
+});
+
+voucher.addEventListener("click", (event) => {
+  voucher.close();
+});
+
+voucherWrapper.addEventListener("click", (event) => event.stopPropagation());
+
+const slider = document.querySelectorAll(".hero-background__item");
+
+let slideCount = 0;
+
+function sliderRun() {
+  if (slideCount < 3) {
+    slider[slideCount].style.opacity = 0;
+    slider[slideCount + 1].style.opacity = 1;
+    slideCount++;
+  } else {
+    slider[slideCount].style.opacity = 0;
+    slider[0].style.opacity = 1;
+    slideCount = 0;
+  }
+}
+
+setInterval(sliderRun, 10000);

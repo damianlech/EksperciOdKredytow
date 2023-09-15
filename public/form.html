@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Eksperci kredytów hipotecznych z Wrocławia, kredyty mieszkaniowe 2%
+    </title>
+    <meta
+      name="description"
+      content="Zastanawiasz się nad kredytem? Skorzystaj z pomocy eksperta! Umów się na bezpłatną konsultację a pomożemy ci w znalezieniu onajlepszej oferty."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="infobar">
+        <div class="infobar__content container">
+          <div class="infobar__content-contact">
+            <p class="infoParagraph">
+              <b>Masz pytanie?</b>&nbsp; Skontaktuj się z nami!
+            </p>
+
+            <a href="tel:+48607667757" class="tel">
+              <img src="img/phone.svg" alt="phone icon" />
+              &nbsp;
+              <b>607 667 757</b>
+            </a>
+
+            <a href="tel:+48530150042" class="tel">
+              <img src="img/phone.svg" alt="phone icon" />
+              &nbsp;
+              <b>530 150 042</b>
+            </a>
+          </div>
+          <div class="infobar__content-social">
+            <p class="infoParagraph">Znajdź nas w mediach społecznościowych!</p>
+            <p id="line" class="infoParagraph"></p>
+            <a
+              href="https://www.facebook.com/EksperciOdKredytow"
+              target="_blank"
+            >
+              <img src="img/facebook.svg" alt="facebook icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header container">
+        <div class="header-logo">
+          <a href="https://www.eksperciodkredytow.pl">
+            <img
+              title="Eksperci od kredytów Logo"
+              src="./img/logo.svg"
+              alt="Eksperci od kredytów Logo"
+              class="header-logo__img"
+          /></a>
+        </div>
+        <div class="menu-btn">
+          <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+          <ul class="menu-nav">
+            <li class="menu-nav__item">
+              <a href="/index.html" class="menu-nav__link">
+                <img src="img/home.svg" alt="home icon" />&nbsp; Home
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="/index.html#about" class="menu-nav__link">
+                <img src="img/about.svg" alt="about icon" />&nbsp; O nas
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="/index.html#offer" class="menu-nav__link">
+                <img src="img/services.svg" alt="services icon" />&nbsp; Nasze
+                usługi
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="/index.html#how" class="menu-nav__link">
+                <img src="img/work.svg" alt="work icon" />&nbsp; Jak działamy?
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="/form.html" class="menu-nav__link active">
+                <img src="img/phone2.svg" alt="phone2 icon" />&nbsp; Kontakt
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="form" id="form">
+      <div class="form-wrap">
+        <div class="form-content container fcf-body">
+          <div class="fcf-form-wrap">
+            <div id="fcf-form">
+              <form
+                class="fcf-form-class"
+                method="post"
+                action="fcf-assets/9000.process.php"
+              >
+                <div class="form-content__title">
+                  <div class="form-content__title-main">
+                    <h2>napisz do nas wiadomość</h2>
+                  </div>
+                  <div class="form-content__title-sub">
+                    <p>odezwiemy się jak najszybciej</p>
+                  </div>
+                </div>
+                <div class="form-content__fields">
+                  <div class="form-content__fields-wrap">
+                    <div class="form-content__fields__field fcf-field">
+                      <div class="fcf-control">
+                        <label for="Name" class="fcf-label"
+                          >Imię i nazwisko:
+                          <span class="requires">*</span></label
+                        >
+                        <input
+                          type="text"
+                          name="Name"
+                          id="Name"
+                          class="fcf-input is-full-width"
+                          placeholder="Wprowadź swoje imię i nazwisko..."
+                          maxlength="60"
+                          data-validate-field="Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-content__fields__field fcf-field">
+                      <div class="fcf-control">
+                        <label for="Email" class="fcf-label"
+                          >Adres e-mail: <span class="requires">*</span></label
+                        >
+                        <input
+                          type="email"
+                          name="Email"
+                          id="Email"
+                          class="fcf-input is-full-width"
+                          placeholder="Wprowadź swój adres e-mail..."
+                          maxlength="100"
+                          data-validate-field="Email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-content__fields__field fcf-field">
+                      <div class="fcf-control">
+                        <label for="tel" class="fcf-label"
+                          >Numer Telefonu:</label
+                        >
+                        <input
+                          type="tel"
+                          name="tel"
+                          id="tel"
+                          class="fcf-input is-full-width"
+                          placeholder="Wprowadź swój numer kontaktowy..."
+                          maxlength="12"
+                          data-validate-field="tel"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-content__fields__field fcf-field">
+                    <div class="fcf-control">
+                      <label for="Message" class="fcf-label"
+                        >Twoja wiadomość: <span class="requires">*</span></label
+                      >
+                      <textarea
+                        name="Message"
+                        id="Message"
+                        class="fcf-textarea"
+                        placeholder="Wpisz wiadomość..."
+                        maxlength="3000"
+                        rows="10"
+                        data-validate-field="Message"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-content-buttons">
+                  <div class="form-content-buttons__checkbox">
+                    <div class="fcf-field">
+                      <div class="fcf-control">
+                        <legend class="fcf-label"></legend>
+                        <label for="Sign-up-1" class="fcf-checkbox">
+                          <input
+                            type="checkbox"
+                            name="Sign-up"
+                            id="Sign-up-1"
+                            value="Sign-up"
+                            data-validate-field="Sign-up"
+                            required
+                          />
+                          Wyrażam zgodę na przetwarzanie moich danych osobowych
+                          w celu kontaktu:
+                          <a href="#rodo">polityka prywatności</a>
+                          <span class="requires">*</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fcf-status" class="fcf-status"></div>
+                  <div class="form-content-buttons__btn fcf-field">
+                    <div class="fcf-buttons">
+                      <button
+                        id="fcf-button"
+                        type="submit"
+                        class="btn-main fcf-button"
+                      >
+                        Wyślij wiadomość
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="fcf-thank-you" style="display: none">
+              <div class="form-content__thanks__items">
+                <div class="form-content__thanks__items__item">
+                  <img
+                    class="form-content__thanks__items__item-image"
+                    src="../img/vector.svg"
+                    alt="OK-img"
+                  />
+                  <h2 class="form-content__thanks__items__item-main">
+                    Dziękujemy za kontakt!
+                  </h2>
+                  <p class="form-content__thanks__items__item-sub">
+                    Odezwiemy się najszybciej jak to możliwe!
+                  </p>
+                </div>
+                <div class="form-content__thanks__items__item">
+                  <p class="form-content__thanks__items__item-text">
+                    Twoja wiadomość została wysłana pomyślnie!
+                  </p>
+                  <a
+                    href="/index.html"
+                    class="form-content__thanks__items__item-button btn-add"
+                    >Wróć do strony głównej</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-image">
+          <img src="../img/mail-img.jpg" alt="Mail Image" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer-content container">
+        <div class="footer-content__items">
+          <div class="footer-content__items__item--wrap">
+            <div class="footer-content__items__item--wrap__logo">
+              <img src="../img/logo-white.svg" alt="Logo white" />
+            </div>
+            <div class="footer-content__items__item--wrap__address">
+              <h2 class="footer-content__items__item--wrap__address-title">
+                Eksperci od kredytów
+              </h2>
+              <div class="footer-content__items__item--wrap__address-text">
+                <img src="../img/pin.svg" alt="Pin img" />
+                <a
+                  href="https://maps.app.goo.gl/nCQQSUewcidcn5g57"
+                  target="_blank"
+                >
+                  <p>
+                    ul. Bolesława Prusa 6 lok.28 (budynek Lokum Vena)
+                    <br />50-319 Wrocław
+                  </p></a
+                >
+              </div>
+            </div>
+            <a href="/rodo.html" id="rodo-link">RODO i polityka prywatności</a>
+          </div>
+          <div class="footer-content__items__item--contact">
+            <div class="footer-content__items__item--contact-subItem">
+              <img src="../img/frame-miroslaw.png" alt="Frame Miroslaw" />
+              <div class="footer-content__items__item--contact-subItem__info">
+                <h3
+                  class="footer-content__items__item--contact-subItem__info--miroslaw"
+                >
+                  Mirosław Kantor
+                </h3>
+                <a href="tel:+48530150042" class="tel">
+                  <img src="img/how-phone-blue.svg" alt="phone icon" />
+                  <b>530 150 042</b>
+                </a>
+                <a
+                  href="mailto:miroslaw.kantor@eksperciodkredytow.pl"
+                  class="mail"
+                >
+                  <img src="img/mail-blue.svg" alt="phone icon" />
+                  <b>miroslaw.kantor<br />@eksperciodkredytow.pl</b>
+                </a>
+              </div>
+            </div>
+            <div class="footer-content__items__item--contact-subItem">
+              <img src="../img/Frame65.png" alt="Frame Dorota" />
+              <div class="footer-content__items__item--contact-subItem__info">
+                <h3
+                  class="footer-content__items__item--contact-subItem__info--dorota"
+                >
+                  Dorota Lech
+                </h3>
+                <a href="tel:+48607667757" class="tel">
+                  <img src="img/how-phone-red.svg" alt="phone icon" />
+                  <b>607 667 757</b>
+                </a>
+                <a href="mailto:dorota.lech@eksperciodkredytow.pl" class="mail">
+                  <img src="img/mail-red.svg" alt="phone icon" />
+                  <b>dorota.lech<br />@eksperciodkredytow.pl</b>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          Copyright © Eksperciodkredytow.pl - Projekt graficzny: Studio
+          Projektowe Bonsai Design
+        </p>
+      </div>
+    </footer>
+    <script src="fcf-assets/js/lang/fcf.en.js"></script>
+    <script src="fcf-assets/js/fcf.just-validate.min.js"></script>
+    <script src="fcf-assets/js/9000.form.js"></script>
+    <script src="js/other.js"></script>
+  </body>
+</html>
